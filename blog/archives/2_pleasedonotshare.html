@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+    <script type="text/javascript" src="dygraph-combined.js"></script>
+
+    <title>Pablo Barberá, New York University</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="../../css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+
+<style type="text/css">
+   pre .operator,
+   pre .paren {
+     color: rgb(104, 118, 135)
+   }
+
+   pre .literal {
+     color: rgb(88, 72, 246)
+   }
+
+   pre .number {
+     color: rgb(0, 0, 205);
+   }
+
+   pre .comment {
+     color: rgb(76, 136, 107);
+   }
+
+   pre .keyword {
+     color: rgb(0, 0, 255);
+   }
+
+   pre .identifier {
+     color: rgb(0, 0, 0);
+   }
+
+   pre .string {
+     color: rgb(3, 106, 7);
+   }
+</style>
+
+<!-- MathJax scripts -->
+<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+</head>
+
+<body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="../../index.html">Pablo Barberá</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../../research.html">Research</a></li>
+              <li><a href="http://github.com/pablobarbera">Code</a></li>
+              <li class="active"><a href="../index.html">Blog</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+  <div class="span10">
+    <h2><a href="1.html">Who is tweeting about #Syria, and how?</a></h2>
+
+
+
+<p>President Obama&#39;s call for an air strike on Syria in response to the alleged use of chemical weapons has, <a href="http://xkcd.com/1239/">of course</a>, generated a <a href="https://twitter.com/TwitterData/status/376052238294069248/photo/1">heated debate on social media</a>. According to Topsy, <a href="http://topsy.com/s?q=syria&amp;window=m">more than 5 million tweets</a> have mentioned &#39;syria&#39; in the past month. As I show in the plot below, discussions about this issue have taken place not only in the US, but also around the world, in all languages. In this blog post I show that Twitter data can be a useful source of information for the systematic study of public opinion from a comparative perspective.</p>
+
+<center><div id="graph" style="width:600px; height=500"; margin:0px; padding:0px 0px 0px 0px; ></div>Source of data: Topsy.</center>
+
+<script type="text/javascript">
+  var g1;
+  g1 = new Dygraph(
+    document.getElementById("graph"),
+    "topsy_counts.csv", // path to CSV file
+    {
+        rollPeriod: 1,
+        title: "Tweets about #Syria",
+        ylabel: "Tweets per day",
+        legend: "always",
+        fillGraph:true,
+         labelsDivStyles: { "textAlign": "left" , 'background': 'none', 'position': 'right', 'margin': '0px', 'padding': '40px 200px 0px 0px'},
+        colors: ["blue", "red", "orange", "green", "black", "grey", "pink"],
+        labelsSeparateLines: true,
+        rightGap:0,
+      visibility: [true, true, true, true, true, true, true],
+        labelsKMB: true,
+    }          // options
+  );
+</script>
+
+<p>Using my R package, <a href="http://pablobarbera.com/blog/archives/1.html">streamR</a>, I collected all geolocated tweets mentioning Syria in different languages (English, Spanish, French, German, Arabic, Russian, Turkish, Japanese&hellip;) from August 1st to September 7h, as well as baseline samples of random tweets with and without geolocation. The main dataset contains a total of nearly 87,000 tweets sent from 170 different countries.</p>
+
+<p>Note that geolocated tweets are in no way representative of the entire universe of users. For example, 78% of these tweets were sent from mobile devices (41% iPhone, 24% Android, 7% Blackberry, 3% iPad), but on average only around 58% of all tweets are sent from such devices (25% iPhone, 20% Android, 7% Blackberry, 2% iPad). This implies that my sample probably overrepresents young Twitter users with high income. Similarly, while 43% of these geolocated tweets use a hashtag, for a random sample of tweets this proportion is only 30%. All other user characteristics (number of followers, when their account was created, number of tweets sent) point in the same direction: Twitter users who geolocate their tweets are a very self-selected group, which makes a sophisticated use of this social networking site. This can be a problem if our purpose is to make inferences about support for a military intervention, for example, but not if we&#39;re interested in examining how the debate is being framed in the public agenda, since this sample of Twitter users could be a representation of &#39;elite&#39; opinion about the issue.</p>
+
+<h3>Who is participating in the discussion about #Syria on Twitter?</h3>
+
+<p>The first result of interest is that a large proportion of tweets originate from only two countries: the United States (27%) and Saudi Arabia (21%). This is perhaps not too surprising if we look again at the plot above: the alleged chemical attack on August 21st generated an intense reaction in the Arabic twittersphere, while the possibility of military response, after August 26th, sparked an also heated debate in the US. In terms of the language in which tweets are written, English and Arabic are also by far the most frequently used (45% and 35%); in proportions much greater than what we would find in a random sample of tweets (34% and 6%).</p>
+
+<p>To better understand the public of which countries paid more attention to this issue, I have computed a <a href="http://www.floatingsheep.org/2012/11/mapping-eastern-kentucky-earthquake.html">normalized index of Twitter attention</a>, which indicates how many more tweets than expected about Syria were sent from every country,</p>
+
+<center><p>\( \textrm{attention}_i = \frac{\textrm{tweets}_i / \sum_i^n \textrm{tweets}_i}{\textrm{TWEETS}_i / \sum_i^n \textrm{TWEETS}_i} \)</p></center>
+
+<p>where \( \textrm{tweets}_i \) is the number of geolocated tweets mentioning Syria (in different languages) sent from country \( i \) and \( \textrm{TWEETS}_i \) is the number of tweets sent from that same country in the baseline sample. The plot below maps the distribution of the attention index by country. Click <a href="images/attention_map.pdf">here</a> for a high-resolution version.</p>
+
+<center><img src="images/attention_map.png" alt="Twitter Attention Map" style="width: 750px;"/></center>
+
+<p>As expected, the proportion of tweets about Syria that are coming from inside Syria is much higher than the baseline (around 70 times higher). It&#39;s also interesting to note how countries in the Middle East, such as Egypt, Iraq, Jordan or Saudi Arabia have Twitter audiences highly engaged in the discussion about this issue. In Europe, German and Italian Twitter users appear to be more attentive than users in the UK, Spain or France. This plot also shows that Twitter users in the US are highly interested in this issue, but only around what we would expect given the usual number of tweets sent from this country (the attention index is 0.97).</p>
+
+<h3>How is the conversation about #Syria being framed in different countries?</h3>
+
+<p>A second question to explore concerns the content of these tweets. How are audiences of different countries discussing the possible intervention in Syria? What type of frames are being used? What aspects of the debate are emphasized? While answering these questions will require a more sophisticated analysis, a first examination of what words are being used more frequently can already be illuminating. </p>
+
+<p>That&#39;s what I show in the tables below, which list the top 12 n-grams (unigrams, bigrams, and trigrams) used in tweets sent from the 6 most active countries, after applying the usual text processing techniques (converting to lowercase, removing stopwords and punctuation, etc.)</p>
+
+<hr/>
+
+<table><thead>
+<tr>
+<th>United States</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>syria, US, obama, war, syrian, attack, chemical, military, strike, people, going, now</td>
+</tr>
+<tr>
+<td>war syria, chemical weapons, attack syria, strike syria, action syria, military action, bomb syria, going syria, president obama, go war, syria strike, bombing syria</td>
+</tr>
+<tr>
+<td>military action syria, go war syria, going war syria, military strike syria, use chemical weapons, chemical weapons attack, chemical weapons syria, syrian electronic army, US strike syria, whats going syria, military intervention syria, military force syria</td>
+</tr>
+</tbody></table>
+
+<hr/>
+
+<table><thead>
+<tr>
+<th>Saudi Arabia</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>سوريا, اللهم, الله, يا, بشار, يارب, مصر, انصر, المسلمين, أن, الشام, لهم,</td>
+</tr>
+<tr>
+<td>سوريا اللهم, اللهم انصر, اللهم عجل, اخواننا سوريا, انصر اخواننا, مصر سوريا, يا سوريا , المسلمين سوريا, أهل سوريا, سوريا سوريا, سوريا مصر, سوريا تبكي</td>
+</tr>
+<tr>
+<td>سوريا تبكي بالدماء, الله ونعم الوكيل, اللهم انصر اخواننا, يا مالك السماء, اللهم بدل حالهم , تجهيزهم للمدارس كم, للمدارس كم نحن, سوريا تباد بالكيماوي, نهتفُ بالدعاء سألتُك, بدفن أبناءها الشهداء , سألتُك يا مالك, انصر اخواننا سوريا</td>
+</tr>
+</tbody></table>
+
+<hr/>
+
+<table><thead>
+<tr>
+<th>United Kingdom</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>syria, war, syrian, US, people, chemical, military, UK, action, vote, weapons, attack</td>
+</tr>
+<tr>
+<td>chemical weapons, action syria, military action, war syria, attack syria, intervention syria, going syria, military intervention, get involved, syria vote, people syria, david cameron</td>
+</tr>
+<tr>
+<td>military action syria, military intervention syria, use chemical weapons, get involved syria, chemical weapons syria, whats going syria, whats happening syria, chemical weapons used, getting involved syria, UN security council, go war syria, syria chemical weapons</td>
+</tr>
+</tbody></table>
+
+<hr/>
+
+<table><thead>
+<tr>
+<th>France</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>syrie, syria, guerre, france, holland, noalaguerreensyrie, intervention, contre, faire, syrien, syriens, obama</td>
+</tr>
+<tr>
+<td>guerre syrie, intervention syrie, armes chimiques, syrie hollande, lintervention syrie, passe syrie, intervention militaire, nonalaguerreensyrie nonalaguerreensyrie, syrie france, syrie nonalaguerreensyrie, militaire syrie, intervenir syrie</td>
+</tr>
+<tr>
+<td>bachar el assad, intervention militaire syrie, armes chimiques syrie, contre guerre syrie, faire guerre syrie, quil passe syrie, contre intervention syrie, crime contre lhumanite, contre lintervention syrie, non a guerre, opposes a intervention, syrie armes chimiques</td>
+</tr>
+</tbody></table>
+
+<hr/>
+
+<table><thead>
+<tr>
+<th>Italy</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>siria, syria, obama, guerra, USA, pace, assad, armi, siriani, chemical, US, attacco</td>
+</tr>
+<tr>
+<td>guerra siria, armi chimique, chemical weapons, siria obama, nobel pace, pace siria, chemical attack, attacco siria, premio nobel, siria guerra, intervento siria, papa francesco</td>
+</tr>
+<tr>
+<td>premio nobel pace, armi chimique siria, chemical attack syria, military action syria, uso armi chimique, amici stop war, grazie amici stop, stop war syria, terza guerra mondiale, use chemical weapons, digiuno pace siria, luso armi chimique</td>
+</tr>
+</tbody></table>
+
+<hr/>
+
+<table><thead>
+<tr>
+<th>Spain</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>siria, syria, ataque, obama, guerra, EEUU, paz, armas, ONU, mundo, intervención, España</td>
+</tr>
+<tr>
+<td>ataque siria, guerra siria, armas químicas, atacar siria, militar siria, nobel paz, ataque químico, intervención siria, paz siria, premio nobel</td>
+</tr>
+<tr>
+<td>premio nobel paz, ataque químico siria, armas químicas siria, intervención militar siria, uso armas químicas, acción militar siria, ataque militar siria, ataque siria duerme, inminente ataque siria, oración paz siria, please check bombing, simultáneo ataque siria</td>
+</tr>
+</tbody></table>
+
+<hr/>
+
+<p>The distribution of most common words across languages yield some interesting results. First, tweets from the US use what could be considered &#39;aggresive&#39; language (attack, strike, war, military action, bomb syria&hellip;). This framing is similar to that in the UK, although in this case some words that clearly refer to the idiosyncrasies of this country (UK, syria vote, david cameron, UN security council&hellip;) appear in the list too. In contrast, French, Italian and Spanish Twitter users frame the debate in very different terms, with what appears to be a widespread anti-war feeling (&#39;noalaguerreensyrie&#39;, contre guerre syrie, contre intervention syrie, amici stop war, digiuno pace siria, ONU, paz siria, oración paz siria) and, interestingly, frequent mentions of Obama&#39;s Nobel prize. I don&#39;t speak Arabic, so these results should be taken with caution, but some of the words (سوريا تبكي بالدماء, Syria crying blod; المسلمين سوريا, Muslim Syria;  أهل سوريا, the People of Syria) suggests a framing of the debate in terms of solidarity with the Syrian victims, which could also be due to the different timing in the volume of tweets.</p>
+
+<p>This analysis is still very superficial and mostly descriptive, but these results already suggest some interesting differences in how public discussion about a likely war against Syria is being framed. Although more sophisticated coding techniques and comparisons over different periods of time are of course necessary to validate my findings, these results highlight the still unexplored potential of social media data as a source of information about comparative public opinion.</p>
+
+
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'pablobarbera'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+
+</div>
+
+
+<div class="span2">
+
+    <h4>Published</h4>
+    <div class="date"><span>09 September 2013</span></div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/bootstrap-transition.js"></script>
+    <script src="../../js/bootstrap-modal.js"></script>
+    <script src="../../js/bootstrap-dropdown.js"></script>
+    <script src="../../js/bootstrap-scrollspy.js"></script>
+    <script src="../../js/bootstrap-tab.js"></script>
+    <script src="../../js/bootstrap-tooltip.js"></script>
+    <script src="../../js/bootstrap-popover.js"></script>
+    <script src="../../js/bootstrap-button.js"></script>
+    <script src="../../js/bootstrap-collapse.js"></script>
+    <script src="../../js/bootstrap-carousel.js"></script>
+    <script src="../../js/bootstrap-typeahead.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1191254-10']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+
+</html>
+
