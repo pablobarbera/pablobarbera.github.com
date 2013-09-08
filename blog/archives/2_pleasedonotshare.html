@@ -18,6 +18,10 @@
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
+      .dygraph-legend {
+        left: 70px !important;
+        top: 50px !important;
+      }
     </style>
     <link href="../../css/bootstrap-responsive.min.css" rel="stylesheet">
 
@@ -118,10 +122,11 @@
         ylabel: "Tweets per day",
         legend: "always",
         fillGraph:true,
-         labelsDivStyles: { "textAlign": "left" , 'background': 'none', 'position': 'right', 'margin': '0px', 'padding': '40px 200px 0px 0px'},
+        labelsDivStyles: {'background':'none'},
         colors: ["blue", "red", "orange", "green", "black", "grey", "pink"],
         rightGap:0,
-      visibility: [true, true, true, true, true, true, true],
+        labelsSeparateLines: true,
+        visibility: [true, true, true, true, true, true, true],
         labelsKMB: true,
     }          // options
   );
