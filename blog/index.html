@@ -3,6 +3,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+    <script type="text/javascript" src="dygraph-combined.js"></script>
     <title>Pablo Barberá, New York University</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -59,6 +61,62 @@
 
 <div class="row">
   <div class="span8">
+
+    <h2><a href="archives/2.html">Who is tweeting about #Syria, and how?</a></h2>
+
+<p>President Obama&#39;s call for an air strike on Syria in response to the alleged use of chemical weapons has, <a href="http://xkcd.com/1239/">of course</a>, generated a <a href="https://twitter.com/TwitterData/status/376052238294069248/photo/1">heated debate on social media</a>. According to Topsy, <a href="http://topsy.com/s?q=syria&amp;window=m">more than 5 million tweets</a> have mentioned &#39;syria&#39; in the past month. As I show in the plot below, discussions about this issue have taken place not only in the US, but also around the world, in all languages. In this blog post I show that Twitter data can be a useful source of information for the systematic study of public opinion from a comparative perspective.</p>
+
+<p><center><div id="graph" style="width:550px; height=500; text-align:right"; ></div><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Source of data: Topsy. Lines indicate dates of alleged chemical attack, UK vote on attack in Syria, and Pres. Obama's speech seeking Congress approval for attack.</font></center></p>
+
+<script type="text/javascript">
+  g1 = new Dygraph(
+    document.getElementById("graph"),
+    "topsy_counts.csv", // path to CSV file
+    {
+        rollPeriod: 1,
+        title: "Tweets about #Syria",
+        ylabel: "Tweets per day",
+        legend: "always",
+        fillGraph:true,
+        labelsDivStyles: {'background':'none', 'position':'left', 'padding': '50px 70px'},
+        colors: ["blue", "red", "orange", "green", "black", "grey", "pink"],
+        labelsSeparateLines: true,
+        visibility: [true, true, true, true, true, true, true],
+        labelsKMB: true,
+
+      underlayCallback: function(canvas, area, g) {
+      // Selecting a date in the middle of the graph. 
+      var splitDate = new Date("2013-08-20").getTime();
+      var coords = g.toDomCoords(splitDate, 2.25);      
+      var splitX = coords[0];
+      canvas.fillStyle = 'lightblue';
+      canvas.fillRect(splitX-10, 0, 20, 500);
+      // Selecting a date in the middle of the graph. 
+      var splitDate = new Date("2013-08-29").getTime();
+      var coords = g.toDomCoords(splitDate, 2.25);      
+      var splitX = coords[0];
+      canvas.fillStyle = 'lightblue';
+      canvas.fillRect(splitX-10, 0, 20, 500);
+      // Selecting a date in the middle of the graph. 
+      var splitDate = new Date("2013-08-31").getTime();
+      var coords = g.toDomCoords(splitDate, 2.25);      
+      var splitX = coords[0];
+      canvas.fillStyle = 'lightblue';
+      canvas.fillRect(splitX-10, 0, 20, 500);
+
+
+    }
+ 
+    }         
+  );
+</script>
+
+<p>Using my R package, <a href="http://pablobarbera.com/blog/archives/1.html">streamR</a>, I collected all geolocated tweets mentioning Syria in different languages (English, Spanish, French, German, Arabic, Russian, Turkish, Japanese&hellip;) from August 1st to September 7h, as well as baseline samples of random tweets with and without geolocation. The main dataset contains a total of nearly 100,000 tweets sent from 170 different countries.</p>
+
+<p><a href="archives/2.html">Click for more</a></p>
+
+<hr/>
+
     <h2><a href="archives/1.html">Introducing the streamR package</a></h2>
 
 <p>I just released version 0.1 of my R package <code>streamR</code> on <a href="http://cran.r-project.org/web/packages/streamR/">CRAN</a>. This package includes a series of functions that give R users access to Twitter&#39;s <a href="https://dev.twitter.com/docs/streaming-apis">Streaming API</a>, as well as a tool that parses the captured tweets and transforms them in R data frames, which can then be used in subsequent analyses. <code>streamR</code> supports authentication via OAuth and the <code>ROAuth</code> package, as well as basic authentication with screen name and password.</p>
@@ -70,12 +128,20 @@
 <p><a href="archives/1.html">Click for more</a></p>
 
 </div>
+
+<div class="span4" style="margin-bottom: 17.5cm; margin-top: 0.5cm";>
+
+    <h4>Published</h4>
+    <div class="date"><span>09 September 2013</span></div>
+
+    </div>
+
 <div class="span4">
 
     <h4>Published</h4>
     <div class="date"><span>22 January 2013</span></div>
 
-    </div> <!-- /container -->
+    </div> 
 
     <!-- Le javascript
     ================================================== -->
