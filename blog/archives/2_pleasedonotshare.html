@@ -109,10 +109,9 @@
 
 <p>President Obama&#39;s call for an air strike on Syria in response to the alleged use of chemical weapons has, <a href="http://xkcd.com/1239/">of course</a>, generated a <a href="https://twitter.com/TwitterData/status/376052238294069248/photo/1">heated debate on social media</a>. According to Topsy, <a href="http://topsy.com/s?q=syria&amp;window=m">more than 5 million tweets</a> have mentioned &#39;syria&#39; in the past month. As I show in the plot below, discussions about this issue have taken place not only in the US, but also around the world, in all languages. In this blog post I show that Twitter data can be a useful source of information for the systematic study of public opinion from a comparative perspective.</p>
 
-<center><div id="graph" style="width:600px; height=500; text-align:left"; ></div>Source of data: Topsy.</center>
+<p><center><div id="graph" style="width:600px; height=500; text-align:left"; ></div><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Source of data: Topsy. Lines indicate dates of alleged chemical attack, UK vote on attack in Syria, and Pres. Obama's speech seeking Congress approval for attack.</font></center></p>
 
 <script type="text/javascript">
-  var g1;
   g1 = new Dygraph(
     document.getElementById("graph"),
     "topsy_counts.csv", // path to CSV file
@@ -127,23 +126,47 @@
         labelsSeparateLines: true,
         visibility: [true, true, true, true, true, true, true],
         labelsKMB: true,
-    }          // options
+
+      underlayCallback: function(canvas, area, g) {
+      // Selecting a date in the middle of the graph. 
+      var splitDate = new Date("2013-08-20").getTime();
+      var coords = g.toDomCoords(splitDate, 2.25);      
+      var splitX = coords[0];
+      canvas.fillStyle = 'lightblue';
+      canvas.fillRect(splitX-10, 0, 20, 500);
+      // Selecting a date in the middle of the graph. 
+      var splitDate = new Date("2013-08-29").getTime();
+      var coords = g.toDomCoords(splitDate, 2.25);      
+      var splitX = coords[0];
+      canvas.fillStyle = 'lightblue';
+      canvas.fillRect(splitX-10, 0, 20, 500);
+      // Selecting a date in the middle of the graph. 
+      var splitDate = new Date("2013-08-31").getTime();
+      var coords = g.toDomCoords(splitDate, 2.25);      
+      var splitX = coords[0];
+      canvas.fillStyle = 'lightblue';
+      canvas.fillRect(splitX-10, 0, 20, 500);
+
+
+    }
+ 
+    }         
   );
 </script>
 
-<p>Using my R package, <a href="http://pablobarbera.com/blog/archives/1.html">streamR</a>, I collected all geolocated tweets mentioning Syria in different languages (English, Spanish, French, German, Arabic, Russian, Turkish, Japanese&hellip;) from August 1st to September 7h, as well as baseline samples of random tweets with and without geolocation. The main dataset contains a total of nearly 87,000 tweets sent from 170 different countries.</p>
+<p>Using my R package, <a href="http://pablobarbera.com/blog/archives/1.html">streamR</a>, I collected all geolocated tweets mentioning Syria in different languages (English, Spanish, French, German, Arabic, Russian, Turkish, Japanese&hellip;) from August 1st to September 7h, as well as baseline samples of random tweets with and without geolocation. The main dataset contains a total of nearly 100,000 tweets sent from 170 different countries.</p>
 
-<p>Note that geolocated tweets are in no way representative of the entire universe of users. For example, 78% of these tweets were sent from mobile devices (41% iPhone, 24% Android, 7% Blackberry, 3% iPad), but on average only around 58% of all tweets are sent from such devices (25% iPhone, 20% Android, 7% Blackberry, 2% iPad). This implies that my sample probably overrepresents young Twitter users with high income. Similarly, while 43% of these geolocated tweets use a hashtag, for a random sample of tweets this proportion is only 30%. All other user characteristics (number of followers, when their account was created, number of tweets sent) point in the same direction: Twitter users who geolocate their tweets are a very self-selected group, which makes a sophisticated use of this social networking site. This can be a problem if our purpose is to make inferences about support for a military intervention, for example, but not if we&#39;re interested in examining how the debate is being framed in the public agenda, since this sample of Twitter users could be a representation of &#39;elite&#39; opinion about the issue.</p>
+<p>Note that geolocated tweets are in no way representative of the entire universe of users. For example, 76% of these tweets were sent from mobile devices (41% iPhone, 24% Android, 7% Blackberry, 3% iPad), but on average only around 58% of all tweets are sent from such devices (25% iPhone, 20% Android, 7% Blackberry, 2% iPad). This implies that my sample probably overrepresents young Twitter users with high income. Similarly, while 40% of these geolocated tweets use a hashtag, for a random sample of tweets this proportion is only 30%. All other user characteristics (number of followers, when their account was created, number of tweets sent) point in the same direction: Twitter users who geolocate their tweets use this social networking site in a very specific, sophisticated way. However, the purpose of this post is not to draw inferences about the level of support for a military intervention, for instance, but to illustrate the framing of the debate - a process that is heavily elite-driven in the first place.</p>
 
 <h3>Who is participating in the discussion about #Syria on Twitter?</h3>
 
-<p>The first result of interest is that a large proportion of tweets originate from only two countries: the United States (27%) and Saudi Arabia (21%). This is perhaps not too surprising if we look again at the plot above: the alleged chemical attack on August 21st generated an intense reaction in the Arabic twittersphere, while the possibility of military response, after August 26th, sparked an also heated debate in the US. In terms of the language in which tweets are written, English and Arabic are also by far the most frequently used (45% and 35%); in proportions much greater than what we would find in a random sample of tweets (34% and 6%).</p>
+<p>The first result of interest is that a large proportion of tweets originate from only two countries: the United States (27%) and Saudi Arabia (21%). This is perhaps not too surprising if we look again at the plot above: the alleged chemical attack on August 21st generated an intense reaction in the Arabic twittersphere, while the possibility of military response, after August 26th, sparked an also heated debate in the US. In terms of the language in which tweets are written, English and Arabic are also by far the most frequently used (39% and 31%), followed by Turkish (11%), in all cases in proportions much greater than what we would find in a random sample of tweets (34%, 6%, and 2%).</p>
 
 <p>To better understand the public of which countries paid more attention to this issue, I have computed a <a href="http://www.floatingsheep.org/2012/11/mapping-eastern-kentucky-earthquake.html">normalized index of Twitter attention</a>, which indicates how many more tweets than expected about Syria were sent from every country,</p>
 
-<center><p>\( \textrm{attention}_i = \frac{\textrm{tweets}_i / \sum_i^n \textrm{tweets}_i}{\textrm{TWEETS}_i / \sum_i^n \textrm{TWEETS}_i} \)</p></center>
+<center><p>\( \textrm{attention}_i = \frac{\textrm{syriatweets}_i / \sum_i^n \textrm{syriatweets}_i}{\textrm{tweets}_i / \sum_i^n \textrm{tweets}_i} \)</p></center>
 
-<p>where \( \textrm{tweets}_i \) is the number of geolocated tweets mentioning Syria (in different languages) sent from country \( i \) and \( \textrm{TWEETS}_i \) is the number of tweets sent from that same country in the baseline sample. The plot below maps the distribution of the attention index by country. Click <a href="images/attention_map.pdf">here</a> for a high-resolution version.</p>
+<p>where \( \textrm{syriatweets}_i \) is the number of geolocated tweets mentioning Syria (in different languages) sent from country \( i \) and \( \textrm{tweets}_i \) is the number of tweets sent from that same country in the baseline sample. The plot below maps the distribution of the attention index by country. Click <a href="images/attention_map.pdf">here</a> for a high-resolution version.</p>
 
 <center><img src="images/attention_map.png" alt="Twitter Attention Map" style="width: 750px;"/></center>
 
@@ -153,7 +176,7 @@
 
 <p>A second question to explore concerns the content of these tweets. How are audiences of different countries discussing the possible intervention in Syria? What type of frames are being used? What aspects of the debate are emphasized? While answering these questions will require a more sophisticated analysis, a first examination of what words are being used more frequently can already be illuminating. </p>
 
-<p>That&#39;s what I show in the tables below, which list the top 12 n-grams (unigrams, bigrams, and trigrams) used in tweets sent from the 6 most active countries, after applying the usual text processing techniques (converting to lowercase, removing stopwords and punctuation, etc.)</p>
+<p>That&#39;s what I show in the tables below, which list the top 12 n-grams (unigrams, bigrams, and trigrams) used in tweets sent from the 7 most active countries, after applying the usual text processing techniques (converting to lowercase, removing stopwords and punctuation, etc.)</p>
 
 <hr/>
 
@@ -188,6 +211,25 @@
 </tr>
 <tr>
 <td>سوريا تبكي بالدماء, الله ونعم الوكيل, اللهم انصر اخواننا, يا مالك السماء, اللهم بدل حالهم , تجهيزهم للمدارس كم, للمدارس كم نحن, سوريا تباد بالكيماوي, نهتفُ بالدعاء سألتُك, بدفن أبناءها الشهداء , سألتُك يا مالك, انصر اخواننا سوريا</td>
+</tr>
+</tbody></table>
+
+<hr/>
+
+<table><thead>
+<tr>
+<th>Turkey</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>suriye, suriyede, suriyeye, Icin, Misir, ABD, syria, kimyasal, suriyeli, misirda, suriyedeki, savas, mudahale</td>
+</tr>
+<tr>
+<td>misir suriye, kimyasal silah, suriye mısır, suriye icin, suriyede kimyasal, suriyeye mudahale, mısırda suriyede, suriye konusunda, mısır icin, suriyede mısırda, mısır suriyede, mısır suriyedeki</td>
+</tr>
+<tr>
+<td>suriyede kimyasal silah, mısır suriye icin, pesinde kosan korkusuz, haber pesinde kosan, aldırmadan haber pesinde, risklere aldırmadan haber, tehditle risklere aldırmadan, mısır suriye filistin, bircok kriz bolgesinde, suriyekahire bircok kriz, dolar tl benzin, kriz bolgesinde tehditle
+</td>
 </tr>
 </tbody></table>
 
@@ -265,9 +307,11 @@
 
 <hr/>
 
-<p>The distribution of most common words across languages yield some interesting results. First, tweets from the US use what could be considered &#39;aggresive&#39; language (attack, strike, war, military action, bomb syria&hellip;). This framing is similar to that in the UK, although in this case some words that clearly refer to the idiosyncrasies of this country (UK, syria vote, david cameron, UN security council&hellip;) appear in the list too. In contrast, French, Italian and Spanish Twitter users frame the debate in very different terms, with what appears to be a widespread anti-war feeling (&#39;noalaguerreensyrie&#39;, contre guerre syrie, contre intervention syrie, amici stop war, digiuno pace siria, ONU, paz siria, oración paz siria) and, interestingly, frequent mentions of Obama&#39;s Nobel prize. I don&#39;t speak Arabic, so these results should be taken with caution, but some of the words (سوريا تبكي بالدماء, Syria crying blod; المسلمين سوريا, Muslim Syria;  أهل سوريا, the People of Syria) suggests a framing of the debate in terms of solidarity with the Syrian victims, which could also be due to the different timing in the volume of tweets.</p>
+<p>The distribution of most common words across languages yields some interesting results. First, tweets from the US use what could be considered &#39;agresive&#39; language (attack, strike, war, military action, bomb syria&hellip;). This framing is similar to that in the UK, although in this case some words that clearly refer to the idiosyncrasies of this country (UK, syria vote, david cameron, UN security council&hellip;) appear in the list too. In contrast, French, Italian and Spanish Twitter users frame the debate in very different terms, with what appears to be a widespread anti-war feeling (&#39;noalaguerreensyrie&#39;, contre guerre syrie, contre intervention syrie, amici stop war, digiuno pace siria, ONU, paz siria, oración paz siria) and, interestingly, frequent mentions of Obama&#39;s Nobel prize.</p>
 
-<p>This analysis is still very superficial and mostly descriptive, but these results already suggest some interesting differences in how public discussion about a likely war against Syria is being framed. Although more sophisticated coding techniques and comparisons over different periods of time are of course necessary to validate my findings, these results highlight the still unexplored potential of social media data as a source of information about comparative public opinion.</p>
+<p>I don&#39;t speak Arabic or Turkish, so these results should be taken with caution, but some of the words (سوريا تبكي بالدماء, Syria sheds bloody tears; المسلمين سوريا, Syria muslims;  أهل سوريا, the People of Syria) suggest that the debate in Saudi Arabia is being framed in terms of solidarity with the Syrian victims, which could also be due to the different timing in the volume of tweets. It's also interesting to find frequent references to Egypt in this case as well as in Turkey, where some of the chosen words (kriz bolgesinde tehditle, threat of crisis in the region; Mısır Suriye Filistin, Egypt Syria Palestine) suggest concerns about the future consequences of a military intervention.</p>
+
+<p>This analysis is still very superficial and mostly descriptive, but its results already suggest some interesting differences in how public discussion about a likely war against Syria is being framed. Although more sophisticated coding techniques and comparisons over different periods of time are of course necessary to validate my findings, they highlight the still unexplored potential of social media data as a source of information about comparative public opinion.</p>
 
 
 <div id="disqus_thread"></div>
