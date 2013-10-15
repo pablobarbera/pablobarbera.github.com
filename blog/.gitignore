@@ -1,0 +1,16 @@
+my_oauth
+.DS_Store
+.Rhistory
+.Rapp.history
+1.Rmd
+1.html
+2.Rmd
+2.html
+2.md
+2_withplot.html
+*.R
+*.py
+index_old.html
+js/.Rhistory
+peninsule_map.png
+spain_locations.csv
