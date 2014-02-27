@@ -28,13 +28,13 @@
   },
   "sigma": {
     "graphProperties": {
-      "minEdgeSize": 0.1,
+      "minEdgeSize": 1,
       "maxNodeSize": 20,
-      "maxEdgeSize": 0.1,
+      "maxEdgeSize": 1,
       "minNodeSize": 2
     },
     "drawingProperties": {
-      "labelThreshold": 10,
+      "labelThreshold": 1,
       "hoverFontStyle": "bold",
       "defaultEdgeType": "curve",
       "defaultLabelColor": "#000",
