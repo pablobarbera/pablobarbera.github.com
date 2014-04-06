@@ -99,14 +99,7 @@ hljs.initHighlightingOnLoad();
   <div class="span10">
     <h2><a href="3.html">Rfacebook package: Vignette</a></h2>
 
-<p>This package provides a series of functions that allow R users to access Facebook's API to get information about users and posts, and collect public status updates that mention specific keywords.</p>
-
-<p>Current CRAN release is 0.3. To install the most updated version (0.4) from GitHub, type:</p>
-
-<pre><code class="r">library(devtools)
-library(devtools)
-install_github("Rfacebook", "pablobarbera", subdir="Rfacebook")
-</code></pre>
+<p>The <code>Rfacebook</code> package provides a series of functions that allow R users to access Facebook's API to get information about users and posts, collect public status updates that mention specific keywords, and access private information for an authenticated user.</p>
 
 <p>Click <a href="http://github.com/pablobarbera/Rfacebook/blob/master/Rfacebook-manual.pdf?raw=true">here</a> to read the documentation and <a href="http://pablobarbera.com/code/Rfacebook.html">here</a> to read the vignette.</p>
 
@@ -321,7 +314,7 @@ users &lt;- getUsers(post$likes$from_id, token)
 
 <h3>Extracting personal information</h3>
 
-Rfacebook also allows to read personal information about the authenticated users, such as the content from the Newsfeed, and friends' likes and checkins.
+<p>Rfacebook also allows to read personal information about the authenticated users, such as the content from the Newsfeed, and friends' likes and checkins.</p>
 
 <pre><code class="r">getLikes('pablobarbera', n=1, token)
 </code></pre>
@@ -330,7 +323,6 @@ Rfacebook also allows to read personal information about the authenticated users
 ## 1 687958677914631 FiveThirtyEight
 ## website
 ## 1 http://www.fivethirtyeight.com/ 
-
 </code></pre>
 
 <pre><code class="r">getCheckins('pablobarbera', n=1, token=token)
@@ -358,7 +350,7 @@ Rfacebook also allows to read personal information about the authenticated users
 
 <h3>Executing FQL queries</h3>
 
-To facilitate making API queries not implemented in the current version of the package, I have added the <code>getFQL</code> function, which will return an R list with the result of the query. A trivial example:
+<p>To facilitate making API queries not implemented in the current version of the package, I have added the <code>getFQL</code> function, which will return an R list with the result of the query. A trivial example:</p>
 
 <pre><code class="r">getFQL('SELECT name FROM profile where id = me()', token)
 </code></pre>
