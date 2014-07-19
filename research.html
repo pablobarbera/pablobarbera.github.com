@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,105 +6,260 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
+	
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="css/myresume.css" rel="stylesheet">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="ico/favicon.png">
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">
+  
+    <style>
+      body {
+        padding-top: 40px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+
   </head>
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="index.html">Pablo Barberá</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li><a href="index.html">Home</a></li>
-              <li class="active"><a href="research.html">Research</a></li>
-              <li><a href="code.html">Code</a></li>
+<div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a href="http://www.pablobarbera.com/" class="brand" href="#">Pablo Barberá</a>
+          <ul class="nav navbar-nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="index.html#research">Research</a></li>
+              <li><a href="index.html#code">Code</a></li>
+              <li><a href="index.html#teaching">Teaching</a></li>
               <li><a href="blog/index.html">Blog</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+          </ul>                
 
+            </div>
+        </div><!-- /navbar-inner -->
+    </div><!-- /navbar -->
+
+      
     <div class="container">
+      <div class="row">
+        <div class="span4">
+			<div class="well">
+                <div class="avatar">
+                    <img src="img/avatar.jpg" />
+                </div><!--/avatar -->
+                <br class="clearfix" />
+                
+                <div class="bio">
+                    <h1>Pablo Barberá</h1>
+					<p>Ph.D. Candidate in Politics </br> New York University</p>
+          
+                </div><!--/bio -->
+                <br class="clearfix" />
+                
+                <div class="contact">
+					<p>19 W 4th Street, 2nd Floor <i class="icon-map-marker"></i></p>
+          <p>New York, NY <i class="icon-home"></i></p>
+					<p><a href="http://www.pablobarbera.com">www.pablobarbera.com</a> <i class="icon-globe"></i></p>
+					<p><a href="mailto:pablo.barbera[at]nyu.edu">pablo.barbera@nyu.edu</a> <i class="icon-envelope"></i></p>
+          <p><a href="http://www.twitter.com/p_barbera/">@p_barbera</a> <i class="fa fa-twitter"></i></p>
+          <p><a href="http://www.github.com/pablobarbera/">pablobarbera</a> <i class="fa fa-github"></i></p>
+                </div><!--/contact -->
+                <div align="center"><a class="btn no-radius btn-resume" href="https://www.dropbox.com/s/swgxhucu808x4x4/cv_barbera.pdf"><i class="fa fa-file-pdf-o"></i> Download my CV</a></div>
+                <br class="clearfix" />
 
-         <h2>Research</h2>
 
-<p style="text-align: justify;">My research interests encompass the areas of political behavior and electoral institutions, the use of new information and communication technologies in politics, and the electoral consequences of corruption scandals. Below is a summary of the research projects I am or have been involved in.</p>
+               
+			</div><!--/.well -->
 
-<h2 style="text-align: justify;">Work in progress</h2>
-<p style="text-align: justify;"><strong>Birds of the Same Feather Tweet Together. Bayesian Ideal Point Estimation Using Twitter Data.</strong> [<a href="http://files.nyu.edu/pba220/public/barbera_twitter_ideal_points.pdf">Working paper</a>, December 2013]<font size="2"><blockquote>Political actors and citizens increasingly engage in political conversations on social media outlets such as Twitter. In this paper I show that the structure of the social networks in which they are embedded has the potential to become a source of information about policy positions. Under the assumption that social networks are homophilic, I develop a Bayesian Spatial Following model that scales Twitter users along a common ideological dimension based on who they follow. I apply this network-based method to estimate ideal points for a large sample of Twitter users in the US, the UK, Spain, Germany, Italy, and the Netherlands. The resulting positions of the party accounts on Twitter are highly correlated with offline measures based on their voting records and their manifestos. Similarly, this method is able to successfully classify individuals who state their political orientation publicly, and a sample of users from the state of Ohio whose Twitter accounts are matched with their voter registration history. To illustrate the potential contribution of these estimates, I examine the extent to which online behavior is polarized along ideological lines. Using the 2012 US presidential election campaign as a case study, I find that public exchanges on Twitter take place predominantly among users with similar viewpoints.</blockquote></font></p>
 
-<p style="text-align: justify;">(with Richard Bonneau, John T. Jost, Jonathan Nagler, and Joshua Tucker) <strong>Is There Anybody Out There? The Effects of Legislators’ Communication with their Constituents.</strong> [<a href="http://files.nyu.edu/pba220/public/barbera_twitter_responsiveness.pdf">Working paper</a>, March 2014]<font size="2"><blockquote>Are legislators responsive to their constituents in their public communication? To what extent are they able to shape the agenda that the mass public cares about, as expressed by the issues they discuss? We address this twofold question with an analysis of all tweets sent by Members of the U.S. Congress and a random sample of their followers from January 2013 to March 2014. Using a Latent Dirichlet Allocation model, we extract topics that represent the diversity of issues that legislators and ordinary citizens discuss on this social networking site. Then, we exploit variation in the distribution of topics over time to test whether Members of Congress lead or follow their constituents in their selection of issues to discuss, employing a Granger-causality framework. We find that legislators are responsive in their public statements to their constituents, but also that they have limited influence on their followers’ public agenda. To further understand the mechanisms that explain political responsiveness, we also examine whether Members of Congress are more responsive to specific constituents groups, showing that they are more influenced by co-partisans, politically interested citizens, and social media users located within their constituency.</blockquote></font></p>
 
-<p style="text-align: justify;">(with Pablo Fernández-Vázquez and Gonzalo Rivero) <strong>Rooting out corruption or rooting for corruption? The Heterogenous Electoral Consequences of Scandals</strong> [<a href="http://files.nyu.edu/pba220/public/rooting_out_corruption.pdf">Working paper</a>, January 2013]
-<font size="2"><blockquote> In this article we analyze the electoral consequences of corruption scandals in the 2007 and 2011 Spanish local elections. Previous studies on this case Jiménez (2007); Rivero and Fernández-Vázquez (2010); Costas et al. (2010) have found that voters are not impervious to scandals, but corrupt mayors barely suﬀer electoral consequences for their actions. That conclusion is consistent with the consensus in the comparative literature that corruption has a signiﬁcant but mild electoral eﬀect (Golden, 2006). However, these studies have assumed that voters punish equally all kinds of corrupt practices. We challenge this assumption by distinguishing between two types of corruption, according to the type of welfare consequences they have for the municipality. We ﬁnd that voters ignore or even reward corruption when there are side beneﬁts to it, and that punishment is only administered in those cases in which they do not receive compensation. Our results also show that the electoral punishment is smaller in magnitude when the corrupt incumbent retires, and when the media coverage of the scandal is not extensive.</blockquote></font></p>
+        </div><!--/span-->
+		
+        <div class="span8">
+          <div class="hero-unit">
+            <p>My research interests encompass the areas of political behavior and electoral institutions, the use of new information and communication technologies in politics, and the electoral consequences of corruption scandals. Below is my full list of publications, as well as the research projects I am or have been involved in.</p>
+		  </div>
 
-<p style="text-align: justify;"><strong>When Duverger Becomes Autocratic: Electoral Systems in Non-Democratic Regimes, 1950-2008.</strong> [<a href="http://files.nyu.edu/pba220/public/barbera_ipsa_2012.pdf">Draft</a>, July 2012]<blockquote><font size="2">Do electoral rules matter [also] in non-democratic regimes? The literature on electoral system choice in democracies, and its political consequences, is vast. However, these issues have been neglected in previous studies on elections under dictatorship. In this paper, I address this lack of systematic research. I show that electoral rules have a substantive and enduring impact on political competition in dictatorships with multiparty elections, for they affect the cohesiveness of the opposition. In democracies, the so-called Duverger's law states that restrictive electoral rules shrink the size of the party system (Duverger, 1954; Cox, 1997). Such electoral systems constrain the number of electoral parties that are awarded with seats, and thus, create incentives for parties and voters to coordinate their entry and voting decisions, respectively. I argue that similar effects relate electoral rules and opposition fragmentation in authoritarian elections. These hypothesis are tested using a new dataset that encompasses the electoral rules used in all legislative multi-party elections held under both democratic and authoritarian regimes between 1950 and 2008. In order to address the potential endogeneity issues, I apply different identification strategies, finding robust evidence that electoral rules affect opposition cohesiveness.</blockquote></font></p>
+		  
+		  <div class="header">
+      <hr />
+			<h2>Publications</h2></br>
+      </div>
+          <div class="row">
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Birds of the Same Feather Tweet Together. Bayesian Ideal Point Estimation Using Twitter Data. </h4>
+              Forthcoming in <em>Political Analysis</em>
+             <p><a data-toggle='collapse' data-target='#abstract1'>Expand abstract »</a> | <a href="http://files.nyu.edu/pba220/public/barbera_twitter_ideal_points.pdf">Pre-print</a> | <a href="http://files.nyu.edu/pba220/public/supplementary_materials.pdf">Online appendix</a> | <a href="http://dx.doi.org/10.7910/DVN/26589">Replication materials</a> | <a href="https://github.com/pablobarbera/twitter_ideology">GitHub tutorial</a> <div id='abstract1' class='collapse out'> Politicians and citizens increasingly engage in political conversations on social media outlets such as Twitter. In this paper I show that the structure of the social networks in which they are embedded can be a source of information about their ideological positions. Under the assumption that social networks are homophilic, I develop a Bayesian Spatial Following model that considers ideology as a latent variable, whose value can be inferred by examining which politics actors each user is following. This method allows us to estimate ideology for more actors than any existing alternative, at any point in time and across many polities. I apply this method to estimate ideal points for a large sample of both elite and mass public Twitter users in the US and five European countries. Thee estimated positions of legislators and political parties replicate conventional measures of ideology. The method is also able to successfully classify individuals who state their political preferences publicly and a sample of users matched with their party registration records. To illustrate the potential contribution of these estimates, I examine the extent to which online behavior during the 2012 US presidential election campaign is clustered along ideological lines. </div> </p>
+            </div><!--/span-->
 
-<p style="text-align: justify;">(with Gonzalo Rivero) <strong>Understanding the political representativeness of Twitter users.</strong> [<a href="http://files.nyu.edu/pba220/public/barbera_rivero_2013.pdf">Working paper</a>, December 2013] [website: <a href="http://www.tuitometro.es">tuitometro.es</a>]<font size="2"><blockquote>In this article we analyze the structure and content of the political conversations that took place through the micro-blogging platform Twitter in the context of the 2011 Spanish legislative elections and the 2012 US presidential elections. Using a unique database of nearly 70 million tweets collected during both election campaigns, we find that Twitter replicates most of the existing inequalities in public political exchanges. Twitter users who write about politics tend to be male, to live in urban areas, and to have extreme ideological preferences. Our results have important implications for future research on the relationship between social media and politics, since they highlight the need to correct for potential biases derived from these sources of inequality.</blockquote></font></p>
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Social Media and Political Communication: A survey of Twitter users during the 2013 Italian general election </h4>
+              <em>Italian Political Science Review</em>, 2013. Co-authored with Cristian Vaccari, Augusto Valeriani, Richard Bonneau, John T. Jost, Jonathan Nagler, and Joshua Tucker.
+                 <p><a href="http://www.rivisteweb.it/doi/10.1426/75245">Link</a> | <a data-toggle='collapse' data-target='#abstract2'>Expand abstract »</a><div id='abstract2' class='collapse out'>Social media have become increasingly relevant in election campaigns, as both politicians and citizens have integrated them into their communication repertoires. However, little is known about which types of citizens employ these tools to discuss politics and stay informed about current affairs and how they integrate the contents and connections they encounter online with their offline repertoires of political action. In order to address these questions, we devised an innovative online survey involving a random sample representative of Italians who communicated about the 2013 general election on Twitter. Our results show that Twitter political users in Italy are disproportionately male, younger, better educated, more interested in politics, and ideologically more left-wing than the population as a whole. Moreover, there is a strong correlation between online and offline political communication, and Twitter users often relay the political contents they encounter on the web in their face-to-face conversations. Although the political users of social media are not representative of the population, their greater propensity to engage in political conversations both online and offline make them important channels of personal communication and allow the contents that circulate on the web to diffuse among populations that are much broader than those that engage with social media. The electoral significance of these digital platforms thus reaches well beyond the immediate audiences that are exposed to political contents through them. </div></p>
+            </div><!--/span-->
 
-<h2 style="text-align: justify;">Published articles and chapters</h2>
-<p style="text-align: justify;">(with Cristian Vaccari, Augusto Valeriani, Richard Bonneau, John T. Jost, Jonathan Nagler, and Joshua Tucker) <strong>Social Media and Political Communication: A survey of Twitter users during the 2013 Italian general election</strong>. 2013. Italian Political Science Review, 3/2013: 381-410. [<a href="http://www.rivisteweb.it/doi/10.1426/75245">Link</a>]</p>
-<p style="text-align: justify;">(with Pedro Riera, Raúl Gómez, Juan Antonio Mayoral, and José Ramón Montero) <strong>The electoral consequences of corruption scandals in Spain</strong>. 2013. Crime, Law and Social Change, 60(6): 515:534. [<a href="http://link.springer.com/article/10.1007/s10611-013-9479-1#page-1">Link</a>]</p>
-<p style="text-align: justify;">(with Pablo Fernández-Vázquez) <strong>Los electores ante la corrupción</strong>, in Fundación Alternativas, <em>Informe sobre la democracia en España 2012. </em>(in Spanish) [<a href="http://www.falternativas.org/laboratorio/libros-e-informes/ide/informe-sobre-la-democracia-en-espana-2012">Link</a>]</p>
-<p style="text-align: justify;"><strong>Voting for Parties or for Candidates? The Trade-Off Between Party and Personal Representation in Spanish Regional and Local Elections</strong>. 2010. Revista Española de Investigaciones Sociológicas, 132: 35-63. [<a href="http://www.reis.cis.es/REIS/PDF/REIS_132_021285919804928.pdf">Link</a>]</p>
-<p style="text-align: justify;">(with Javier Arregui) <strong>Naturaleza e influencia de los <em>think tanks</em> en el proceso político en España</strong>. 2011. Working Papers 292, Institut de Ciències Polítiques i Socials. (in Spanish) [<a href="http://www.icps.es/archivos/WorkingPapers/wp292.pdf">Link</a>]</p>
-<p style="text-align: justify;">(with Clara Riba) <strong>Anàlisi de la realitat socioestructural de les Comunitats Autònomes</strong>, in Gallego, R. and Subirats, J. (eds.) <em>Autonomies i desigualtats a Espanya: Percepcions, evolució social i polítiques de benestar. </em>Institut d'Estudis Autonòmics. (in Catalan) [<a href="http://www.gencat.cat/drep/iea/pdfs/ctA_13.pdf">Link</a>]</p>
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> The electoral consequences of corruption scandals in Spain </h4>
+              <em>Crime, Law and Social Change</em>, 2013. Co-authored with Pedro Riera, Raúl Gómez, Juan Antonio Mayoral, and José Ramón Montero.
+                 <p><a href="http://link.springer.com/article/10.1007/s10611-013-9479-1#page-1">Link</a> | <a data-toggle='collapse' data-target='#abstract3'>Expand abstract »</a><div id='abstract3' class='collapse out'>Previous studies of the electoral consequences of corruption in Spanish local elections (Jiménez Revista de Investigaciones Políticas y Sociológicas, 6(2):43–76, 2007; Fernández-Vázquez and Rivero 2011, Consecuencias electorales de la corrupción, 2003–2007. Estudios de Progreso, Fundación Alternativas; Costas et al. European Journal of Political Economy: 28(4):469-484, 2012) have found that voters do not necessarily punish corrupt mayors. As has been pointed out in the comparative literature, the average loss of electoral support by corrupt incumbents is small and does not prevent their reelection most of the times (Jiménez and Caínzos 2006, How far and why do corruption scandals cost votes? In Garrard, J. and Newell, J. (eds.) Scandals in past and contemporary politics. Manchester: Manchester University Press). What remains unsolved, however, is the remarkable variability in this pattern. This article explores some of the micro-level variables that may mediate the effect of corruption scandal on the votes. We focus on three factors: ideological closeness to the incumbent party, political sophistication, and employment status. Our results provide only partial support for our hypotheses, suggesting that the effects of corruption are much more complex than what may seem at first sight. </div></p>
+            </div><!--/span-->
 
-<h2 style="text-align: justify;">Conference papers</h2>
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Los electores ante la corrupción </h4>
+              <em>Informe sobre la democracia en España 2012, Fundación Alternativas</em>, 2012. Co-authored with Pablo Fernández-Vázquez.
+                 <p><a href="http://www.falternativas.org/content/download/21192/536345/version/2/file/Cap_4.pdf">Link</a> </p>
+            </div><!--/span-->
 
-<p style="text-align: justify;">(with Raúl Gómez, Juan A. Mayoral, José Ramón Montero y Pedro Riera) <strong> The Electoral Consequences of Political Scandals in Spain: A Micro-Level Approach.</strong> [Draft, June 2012]</p>
-<p style="text-align: justify;">(with Pedro Riera and Elias Dinas) <strong>Parliamentary Representation and Electoral Success: Beginning a Journey of Thousand Votes with a Single Step</strong>. [<a href="http://www.march.es/Recursos_Web/Ceacs/Paginas_personales/Publicaciones/priera601.pdf">link</a>]</p>
-<p style="text-align: justify;">(with Pedro Riera) <strong>Voting for Locals? Personal Vote in Spanish General Elections</strong>. [<a href="http://www.ecprnet.eu/conferences/general_conference/Reykjavik/paper_details.asp?paperid=2086">link</a>]</p>
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Voting for Parties or for Candidates? The Trade-Off Between Party and Personal Representation in Spanish Regional and Local Elections </h4>
+              <em>Revista Española de Investigaciones Sociológicas</em>, 2010. 
+                 <p><a href="http://www.reis.cis.es/REIS/PDF/REIS_132_021285919804928.pdf">Link</a> | <a data-toggle='collapse' data-target='#abstract4'>Expand abstract »</a><div id='abstract4' class='collapse out'>When voters cast their ballot, are they choosing a candidate or a party? Electoral systems have a significant impact on how this question is answered in each country. As previous literature has shown, some electoral rules foster a more personal representation, while others strengthen the intermediary role of parties. In this paper I maintain that there exists a trade-off between these two types of representation. To empirically verify its existence and how it works, I have chosen local and regional elections in Spain as a case study. Given that they take place simultaneously under similar electoral systems, they can be considered a natural experiment for the study of this trade-off, which allows me to overcome the potential problems of endogeneity present in previous studies. By measuring the significance of ideological closeness and candidate evaluations in voters’ decisions at each level, it is shown that the importance of personal representation increases in local elections at the expense of a less frequent use of ideological proximity as an informational shortcut, thus confirming the existence of the trade-off.</div></p>
+            </div><!--/span-->
 
-<h2 style="text-align: justify;">Miscellaneous</h2>
-<p style="text-align: justify;">(with José Ramón Montero, Pedro Riera, Raúl Gómez and Juan A. Mayoral) <strong>Comportamiento electoral de los españoles en comicios municipales: una aproximación multinivel</strong>. Collaborative Project, awarded with a Research Grant by the Spanish Center for Sociological Research (CIS).</p>
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Naturaleza e influencia de los <em>think tanks</em> en el proceso político en España </h4>
+              <em>Working Papers 292, Institut de Ciències Polítiques i Socials.</em>, 2010. Co-authored with Javier Arregui. 
+                 <p><a href="http://www.icps.es/archivos/WorkingPapers/wp292.pdf">Link</a> 
+            </div><!--/span-->
 
-    </div> <!-- /container -->
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Anàlisi de la realitat socioestructural de les Comunitats Autònomes </h4>
+              Chapter in Gallego, R. and Subirats, J. (eds.) <em>Autonomies i desigualtats a Espanya: Percepcions, evolució social i polítiques de benestar. </em>Institut d'Estudis Autonòmics.
+                 <p><a href="http://www.gencat.cat/drep/iea/pdfs/ctA_13.pdf">Link</a> 
+            </div><!--/span-->
+            <a name="progress"></a> 
+          </div><!--/row-->
+		  
+<div class="header">
+      <hr />
+      <h2>Under review</h2></br>
+      </div>
+          <div class="row">
+            
+              <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Rooting out corruption or rooting for corruption? The Heterogenous Electoral Consequences of Scandals </h4>
+              Co-authored with Pablo Fernández-Vázquez and Gonzalo Rivero. Revise and resubmit at <em>Political Science Research and Methods</em>
+              <p><a href="http://files.nyu.edu/pba220/public/rooting_out_corruption.pdf">Working paper</a>, July 2014 | <a data-toggle='collapse' data-target='#abstract5'>Expand abstract »</a><div id='abstract5' class='collapse out'> Corruption scandals have been found to have significant but mild electoral effects in the comparative literature (Golden, 2006). However, most studies have assumed that voters punish all kinds of illegal practices. This article challenges this assumption by distinguishing between two types of corruption, according to the type of welfare consequences they have for the constituency. This hypothesis is tested using data from the 2011 Spanish local elections. We exploit the abundance of corruption allegations associated with the Spanish housing boom, which generated income gains for a wide segment of the electorate in the short-term. We find that voters ignore corruption when there are side benefits to it, and that punishment is only administered in those cases in which they do not receive compensation. </div></p>
+            </div><!--/span-->
+
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Understanding the political representativeness of Twitter users. </h4>
+              Co-authored with Gonzalo Rivero. Conditional acceptance at <em>Social Science Computer Review</em>.
+              <p><a href="http://files.nyu.edu/pba220/public/barbera_rivero_2013.pdf">Working paper</a>, December 2013 | <a data-toggle='collapse' data-target='#abstract6'>Expand abstract »</a><div id='abstract6' class='collapse out'> In this article we analyze the structure and content of the political conversations that took place through the micro-blogging platform Twitter in the context of the 2011 Spanish legislative elections and the 2012 US presidential elections. Using a unique database of nearly 70 million tweets collected during both election campaigns, we find that Twitter replicates most of the existing inequalities in public political exchanges. Twitter users who write about politics tend to be male, to live in urban areas, and to have extreme ideological preferences. Our results have important implications for future research on the relationship between social media and politics, since they highlight the need to correct for potential biases derived from these sources of inequality. </div></p>
+            </div><!--/span-->
+
+           <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Vague concepts in survey questions:
+          A general problem illustrated with the left-right scale. </h4>
+              Co-authored with Paul Bauer, Kathrin Ackermann and Aaron Venetz. Under review.
+              <p><a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2467595">Working paper</a>, June 2014 | <a data-toggle='collapse' data-target='#abstract7'>Expand abstract »</a><div id='abstract7' class='collapse out'> This study aims at pointing at an important problem: Vague concepts in survey questions may trigger differential associations and, thus, impact respondents’ answers. If these associations vary systematically with other explanatory variables it may introduce bias in observed empirical relationships. We illustrate this problem relying on a survey of 3467 Germans that were asked probing questions regarding the concepts left and right after placing themselves on the left-right scale. We find that individuals attribute very different meanings to the concepts “left” and “right”. This seems to impact measurement values on the left-right scale. In addition, our results provide evidence that associations are systematic in nature, which could bias the effects of other explanatory variables. These results indicate that the interpersonal comparability of this measurement instrument (the left-right scale) across individuals is impaired. We discuss various solutions and recommend replacing the left-right scale with a battery of questions about issues with more specific ideological content in future surveys. Our findings have important implications for survey research in general, and underscore the necessity to investigate to what extent “vague” concepts mean the same for different individuals that belong to the target population. </div></p>
+            </div><!--/span-->
+
+          </div><!--/row-->
+
+
+<div class="header">
+      <hr />
+      <h2>Current projects</h2></br>
+      </div>
+          <div class="row">
+
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Leaders or Followers? Measuring Political Responsiveness in the U.S. Congress Using Social Media Data. </h4>
+              Co-authored with Richard Bonneau, Patrick Egan, John T. Jost, Jonathan Nagler and Joshua Tucker
+              <p><a href="http://files.nyu.edu/pba220/public/barbera_twitter_ideal_points.pdf">Working paper</a>, June 2014 | <a data-toggle='collapse' data-target='#abstract8'>Expand abstract »</a><div id='abstract8' class='collapse out'> Are legislators responsive to their constituents in their public communication? To what extent are they able to shape the agenda that the mass public cares about, as expressed by the issues they discuss? We address this twofold question with an analysis of all tweets sent by Members of the U.S. Congress and a random sample of their followers from January 2013 to March 2014. Using a Latent Dirichlet Allocation model, we extract topics that represent the diversity of issues that legislators and ordinary citizens discuss on this social networking site. Then, we exploit variation in the distribution of topics over time to test whether Members of Congress lead or follow their constituents in their selection of issues to discuss, employing a Granger-causality framework. We find that legislators are responsive in their public statements to their constituents, but also that they have limited influence on their followers’ public agenda. To further understand the mechanisms that explain political responsiveness, we also examine whether Members of Congress are more responsive to specific constituents groups, showing that they are more influenced by co-partisans, politically interested citizens, and social media users located within their constituency. </div></p>
+            </div><!--/span-->
+
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Issue- and Event-Specific Dynamics of Ideological
+Polarization </h4>
+              Co-authored with Richard Bonneau, John T. Jost, Jonathan Nagler and Joshua Tucker
+              <p><a data-toggle='collapse' data-target='#abstract9'>Expand abstract »</a><div id='abstract9' class='collapse out'> Models of social and political behavior require precise estimates of the ideological positions of elite political actors and ordinary citizens. Social media outlets such as Twitter present unparalleled opportunities to measure individual traits of millions of people. Here we extend existing models that estimate positions on latent spaces based on network structure to estimate the ideological preferences of 3.2 million Twitter users in the United States. We then analyze their online interactions through a dataset of 150 million tweets about 12 different issues, both political and non-political. Our results show that communication structures are dynamic, flexible, and situation-specific and that previous work overestimates the degree of online political polarization. Our findings underscore the promise of harvesting social media data bearing on self-selected networks to estimate individual-level characteristics, as well as the potential for developing dynamic indicators of ideological preferences that will enable researchers to address unanswered questions about social and political behavior.
+             </div></p>
+            </div><!--/span-->
+
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Economic Conditions, Economic Perceptions, and Media Coverage of the United States Economy </h4>
+              Co-authored with Amber Boydstun, Suzanne Linn, and Jonathan Nagler
+              <p><a data-toggle='collapse' data-target='#abstract14'>Expand abstract »</a><div id='abstract14' class='collapse out'> 
+              We examine two aspects of media coverage of the economy. First, we look at what objective economic indicators drive the content of media coverage of the economy. Second, we look at the impact of media coverage of the economy on economic perceptions. We pay special attention to whether media coverage is driven by changes in different measures of the state of the economy: including unemployment, inflation, personal income, and the stock market. We then examine the impact of this media coverage of the economy on economic perceptions using the index of Consumer Sentiment, as well as other available survey data. Our analysis covers media coverage and public perceptions of the economy in the United States over a fifty year period, and economic perceptions over a thirty year period.
+             </div></p>
+            </div><!--/span-->
+
+
+
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Follow Your Ideology: A Measure of Ideological Location of Media Sources </h4>
+              Co-authored with Gaurav Sood
+              <p><a data-toggle='collapse' data-target='#abstract10'>Expand abstract »</a><div id='abstract10' class='collapse out'> 
+Analyses of causes and consequences of what is on the news require accurate measures of various dimensions of news content. In this paper, we propose a new technique for measuring variation on the politically salient dimension of ideology. Hitherto, direct analysis of content has been used to determine ideological location of media sources (Groseclose and Milyo 2005; Gentzkow and Shapiro 2010). Here, we propose an alternate method that exploits the fact that politically interested people on online social networks tend to follow ideologically proximate news sources. Using the method, we estimate ideological positions of journalists and media sources, simultaneously with those of politicians, and ordinary citizens. We validate the method by comparing ideological ideal points with estimates obtained using two established content analytic methods. Finally, we we illustrate the utility of these new measures by applying it to the study of two important issues. We investigate whether journalists’ personal ideological beliefs, measured using campaign contributions, affect the ideological slant of the content they produce. We find a strong correlation. We also investigate intra-media ideological heterogeneity. We show that most outlets carry content that is ideologically diverse, and claim that previous studies have underestimated citizens' levels of selective exposure to partisan media.
+             </div></p>
+            </div><!--/span-->
+              
+           <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> The Empirical Determinants of Social Media Adoption by World Leaders and its Empirical Consequences. </h4>
+              Co-authored with Thomas Zeitzoff
+              <p><a data-toggle='collapse' data-target='#abstract11'>Expand abstract »</a><div id='abstract11' class='collapse out'> 
+Over 80% of world leaders have an active presence on the micro-blogging website Twitter. In this paper we explore which factors explain when leaders and governments choose to adopt Twitter as a means of a communication. We look at variation across levels of democratization and election timing to understand differential adoption. We find that both electoral timing and democracy strongly influence adoption of Twitter. Furthermore, we exploit this source of information to better understand the way in which governments try to communicate with their citizens and the international community. Finally, we develop a Bayesian ideal point estimation method using shared Twitter follower networks to locate world leaders on an underlying dimension of affinity. We believe these ideal point measures better capture affinities between countries in international affairs.
+             </div></p>
+            </div><!--/span-->
+
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Parliamentary Representation and Electoral Success: Beginning a Journey of Thousand Votes with a Single Step </h4>
+              Co-authored with Pedro Riera and Elias Dinas
+              <p><a href="http://www.march.es/Recursos_Web/Ceacs/Paginas_personales/Publicaciones/priera601.pdf">Working paper</a>, April 2012 | <a data-toggle='collapse' data-target='#abstract12'>Expand abstract »</a><div id='abstract12' class='collapse out'> In spite of the immense body of work on the electoral costs and benefits of governing for parties, 
+little is known about the potential impact of their presence in parliament. The literature on cartel 
+parties assumes that achieving parliamentary representation, in and of itself, is beneficial for 
+them. However, a direct test on this question is still missing. In this paper, we plan to offer 
+empirical evidence to fill this void by using as case of study the Spanish regional elections. 
+Taking advantage of the discontinuities generated by legal thresholds of representation, we will 
+estimate the causal effect that produces on the success of a small party the fact of having 
+obtained at least one seat in the preceding regional election. Identification is achieved by 
+comparing parties around the area of the threshold, minimizing size-related differences between 
+them this way. Results indicate that parties that slightly clear the threshold in a given regional 
+race improve their fortunes in the future, either in national or sub national elections. Moreover, 
+we show that sub national seats that are obtained later in the national electoral cycle (that is, 
+closer to the next general election) have a bigger impact in them. </div></p>
+            </div><!--/span-->
+
+        <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> When Duverger Becomes Autocratic: Electoral Systems and Opposition Fragmentation in Non-Democratic Regimes. </h4>
+              <p><a href="http://files.nyu.edu/pba220/public/barbera_ipsa_2012.pdf">Working paper</a>, July 2012 | <a data-toggle='collapse' data-target='#abstract13'>Expand abstract »</a><div id='abstract13' class='collapse out'> Do electoral rules matter [also] in non-democratic regimes? The literature on electoral system choice in democracies, and its political consequences, is vast. However, these issues have been neglected in previous studies on elections under dictatorship. In this paper, I address this lack of systematic research. I show that electoral rules have a substantive and enduring impact on political competition in dictatorships with multiparty elections, for they affect the cohesiveness of the opposition. In democracies, the so-called Duverger's law states that restrictive electoral rules shrink the size of the party system (Duverger, 1954; Cox, 1997). Such electoral systems constrain the number of electoral parties that are awarded with seats, and thus, create incentives for parties and voters to coordinate their entry and voting decisions, respectively. I argue that similar effects relate electoral rules and opposition fragmentation in authoritarian elections. These hypothesis are tested using a new dataset that encompasses the electoral rules used in all legislative multi-party elections held under both democratic and authoritarian regimes between 1950 and 2008. In order to address the potential endogeneity issues, I apply different identification strategies, finding robust evidence that electoral rules affect opposition cohesiveness. </div></p>
+            </div><!--/span-->
+
+
+
+
+          </div><!--/row-->
+
+
+
+
+      <hr />
+
+<!--
+      <footer>
+        <p><i class="icon-home"></i> 1234 main St.&nbsp;&nbsp;<i class="icon-map-marker"></i> Anytown, XX 12345&nbsp;&nbsp;<i class="icon-signal"></i> (555)123-4567&nbsp;&nbsp;<i class="icon-globe"></i> www.yoursite.com&nbsp;&nbsp;<i class="icon-envelope"></i> John.doe@domainname.com </p>
+      </footer>
+
+    </div><!--/.container-->
+
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/myresume.js"></script>
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -119,5 +273,6 @@
   })();
 
 </script>
+
   </body>
 </html>

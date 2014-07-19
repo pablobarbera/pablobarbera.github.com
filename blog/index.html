@@ -1,86 +1,175 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
     <script type="text/javascript" src="dygraph-combined.js"></script>
     <title>Pablo Barberá, New York University</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
+	
     <!-- Le styles -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    <link href="../css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" media="screen">
+    <link href="../css/myresume.css" rel="stylesheet">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../font-awesome-4.1.0/css/font-awesome.min.css">
+  
+    <style>
+      body {
+        padding-top: 40px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+            .dygraph-legend {
+        left: 70px !important;
+        top: 50px !important;
+      }
+    </style>
+
+ <style type="text/css">
+   pre .operator,
+   pre .paren {
+     color: rgb(104, 118, 135)
+   }
+
+   pre .literal {
+     color: rgb(88, 72, 246)
+   }
+
+   pre .number {
+     color: rgb(0, 0, 205);
+   }
+
+   pre .comment {
+     color: rgb(76, 136, 107);
+   }
+
+   pre .keyword {
+     color: rgb(0, 0, 255);
+   }
+
+   pre .identifier {
+     color: rgb(0, 0, 0);
+   }
+
+   pre .string {
+     color: rgb(3, 106, 7);
+   }
+</style>
+
+
+
   </head>
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="../index.html">Pablo Barberá</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
+<div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a href="http://www.pablobarbera.com/" class="brand" href="#">Pablo Barberá</a>
+          <ul class="nav navbar-nav">
               <li><a href="../index.html">Home</a></li>
-              <li><a href="../research.html">Research</a></li>
-              <li><a href="../code.html">Code</a></li>
-              <li class="active"><a href="index.html">Blog</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+              <li><a href="../index.html#research">Research</a></li>
+              <li><a href="../index.html#code">Code</a></li>
+              <li><a href="../index.html#teaching">Teaching</a></li>
+              <li class="active"><a href="">Blog</a></li>
+          </ul>                
 
+            </div>
+        </div><!-- /navbar-inner -->
+    </div><!-- /navbar -->
+
+      
     <div class="container">
+      <div class="row">
+        <div class="span4">
+			<div class="well">
+                <div class="avatar">
+                    <img src="../img/avatar.jpg" />
+                </div><!--/avatar -->
+                <br class="clearfix" />
+                
+                <div class="bio">
+                    <h1>Pablo Barberá</h1>
+					<p>Ph.D. Candidate in Politics </br> New York University</p>
+          
+                </div><!--/bio -->
+                <br class="clearfix" />
+                
+                <div class="contact">
+					<p>19 W 4th Street, 2nd Floor <i class="icon-map-marker"></i></p>
+          <p>New York, NY <i class="icon-home"></i></p>
+					<p><a href="http://www.pablobarbera.com">www.pablobarbera.com</a> <i class="icon-globe"></i></p>
+					<p><a href="mailto:pablo.barbera[at]nyu.edu">pablo.barbera@nyu.edu</a> <i class="icon-envelope"></i></p>
+          <p><a href="http://www.twitter.com/p_barbera/">@p_barbera</a> <i class="fa fa-twitter"></i></p>
+          <p><a href="http://www.github.com/pablobarbera/">pablobarbera</a> <i class="fa fa-github"></i></p>
+                </div><!--/contact -->
+                <div align="center"><a class="btn no-radius btn-resume" href="https://www.dropbox.com/s/swgxhucu808x4x4/cv_barbera.pdf"><i class="fa fa-file-pdf-o"></i> Download my CV</a></div>
+                <br class="clearfix" />
+       
+			</div><!--/.well -->
+
+<a class="twitter-timeline" href="https://twitter.com/p_barbera" data-widget-id="488027846829305856">Tweets by @p_barbera</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div><!--/span-->
+		
+        <div class="span8">
+          </br>
+
+<div class="header">
+  <b>Huffington Post | 21 February 2014</b>
+      <h3><a href="http://www.huffingtonpost.com/pablo-barbera/tweeting-the-revolution-s_b_4831104.html">Tweeting the Revolution: Social Media Use and Euromaidan Protests</a></h3>
+      </div>
+      <em>Co-authored with Megan Metzger</em>
+    <p>The past three days have been the most violent in recent Ukrainian history. Over 70 people are reported to have died since violence erupted on Tuesday, including following the reemergence of violence on Wednesday after the collapse of a truce between the government and protestors. Thursday, the EU formally announced that it will impose sanctions on those it deems responsible for the violence, marking the first active international intervention since the beginning of protests in November. As in other events of collective actions in the past few years, social media appears to be playing a prominent role in organizing and motivating Ukrainian protestors.
+
+</p>
+
+<p><a href="http://www.huffingtonpost.com/pablo-barbera/tweeting-the-revolution-s_b_4831104.html">Click for more</a></p>
+      
+      <hr />
+
+<div class="header">
+  <b>The Monkey Cage / Washington Post | 4 December 2013</b>
+      <h3><a href="http://www.washingtonpost.com/blogs/monkey-cage/wp/2013/12/04/strategic-use-of-facebook-and-twitter-in-ukrainian-protests/">How Ukrainian protestors are using Twitter and Facebook</a></h3>
+      </div>
+      <em>Co-authored with Megan Metzger</em>
+    <p>Protests on the streets of Kiev, and in other cities across the Ukraine, have been ongoing now for two weeks. Organized in response to a decision on the part of the Ukrainian government to move towards closer ties with Russia, and away from strengthening the relationship with the European Union, the protests are the largest in Ukraine since the Orange Revolution in 2004. As with many recent protests, there has been much conversation about the role that social media has played in Ukraine. An article in the Kyiv Post argued that social media had played a critical role. At the Social Media and Political Participation (SMaPP) lab at NYU, we have been collecting all tweets mentioning the most common Twitter hashtags of the protest since the morning of Monday, Nov. 25, as well as data on public Facebook activity. What can we learn from these digital traces about the role of social media in the Ukrainian protests?</p>
+
+<p><a href="http://www.washingtonpost.com/blogs/monkey-cage/wp/2013/12/04/strategic-use-of-facebook-and-twitter-in-ukrainian-protests/">Click for more</a></p>
+      
+      <hr />
 
 
-
-<div class="row">
-  <div class="span8">
-
-    <h2><a href="archives/3.html">Introducing the Rfacebook package</a></h2>
-
+<div class="header">
+  <b>Blog | 26 November 2013</b>
+      <h3><a href="archives/3.html">Introducing the Rfacebook package</a></h3>
+      </div>
     <p>My new R package <code>Rfacebook</code> is now available on <a href="http://cran.r-project.org/web/packages/Rfacebook">CRAN</a>. This package is intended to provide access to the <a href="https://developers.facebook.com/docs/graph-api/">Facebook Graph API</a> within R. It includes a series of functions that allow R users to extract their private information, search for public Facebook posts that mention specific keywords, capture data from Facebook pages, and update their Facebook status.</p>
 
 <p>In this post I describe and illustrate the current functions included in the package. Used in combination with other R packages, Rfacebook can be a very powerful tool for researchers interested in analyzing social media data. For any question, or to report any bug, you can contact me at pablo.barbera[at]nyu.edu or via twitter (<a href="http://www.twitter.com/p_barbera">@p_barbera</a>), or on the comments section below.</p>
 
 <p><a href="archives/3.html">Click for more</a></p>
+		  
+      <hr />
 
-<hr/>
-
-    <h2><a href="archives/2.html">Who is tweeting about #Syria, and how?</a></h2>
-
+<div class="header">
+  <b>Blog | 9 September 2013</b>
+      <h3><a href="archives/2.html">Who is tweeting about #Syria, and how?</a></h3>
+      </div>
 <p>President Obama&#39;s call for an air strike on Syria in response to the alleged use of chemical weapons has, <a href="http://xkcd.com/1239/">of course</a>, generated a <a href="https://twitter.com/TwitterData/status/376052238294069248/photo/1">heated debate on social media</a>. According to Topsy, <a href="http://topsy.com/s?q=syria&amp;window=m">more than 5 million tweets</a> have mentioned &#39;syria&#39; in the past month. As the plot below indicates, discussions about this issue have taken place not only in the US, but also around the world, in all languages. In this blog post I show that Twitter data can be a useful source of information for the systematic study of public opinion from a comparative perspective.</p>
 
-<p><center><div id="graph" style="width:550px; height=500; text-align:left"; ></div><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Source of data: Topsy. Lines indicate dates of alleged chemical attack, UK vote on attack in Syria, and Pres. Obama's speech seeking Congress approval for attack.</font></center></p>
+<p><center><div id="graph2" style="width:550px; height=500; text-align:left"; ></div><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Source of data: Topsy. Lines indicate dates of alleged chemical attack, UK vote on attack in Syria, and Pres. Obama's speech seeking Congress approval for attack.</font></center></p>
 
 <script type="text/javascript">
   g1 = new Dygraph(
-    document.getElementById("graph"),
+    document.getElementById("graph2"),
     "topsy_counts.csv", // path to CSV file
     {
         rollPeriod: 1,
@@ -88,7 +177,7 @@
         ylabel: "Tweets per day",
         legend: "always",
         fillGraph:true,
-        labelsDivStyles: {'background':'none', 'position':'left', 'padding': '50px 70px'},
+        labelsDivStyles: {'background':'none'},
         colors: ["blue", "red", "orange", "green", "black", "grey", "pink"],
         labelsSeparateLines: true,
         visibility: [true, true, true, true, true, true, true],
@@ -124,11 +213,49 @@
 <p>Using my R package, <a href="http://pablobarbera.com/blog/archives/1.html">streamR</a>, I collected all geolocated tweets mentioning Syria in different languages (English, Spanish, French, German, Arabic, Russian, Turkish, Japanese&hellip;) from August 1st to September 7h, as well as baseline samples of random tweets with and without geolocation. The main dataset contains a total of nearly 100,000 tweets sent from 170 different countries.</p>
 
 <p><a href="archives/2.html">Click for more</a></p>
+      
+      <hr />
 
-<hr/>
+<div class="header">
+  <b>The Monkey Cage | 9 June 2013</b>
+      <h3><a href="http://themonkeycage.org/2013/06/09/30822/">The Dynamics of Information Diffusion in the Turkish Protests</a></h3>
+      </div>
+      <em>Co-authored with Sandra González-Bailón</em>
+    <p>Social networking sites, such as Twitter, Facebook or Tumblr, appear to be playing a prominent role in the coordination of the still ongoing protests in Turkey. There is abundant evidence suggesting that social media have been pivotal in the spread of information, especially in the absence of coverage by traditional media; to recruit and mobilize protesters; to coordinate the movement without the infrastructure of formal organizations; and to draw the attention and support of the international community. The protests in Turkey add up to a long list of popular uprisings and massive demonstrations around the globe that took shape and gained momentum with the help of social media. However, there are still many open questions about how social networks facilitate the diffusion of information and whether some users play special roles in increasing the visibility of the protests. Results from a preliminary analysis of data collected at the SMaPP lab tracking protest activity in Twitter reveal patterns that are consistent with previous findings about protests in Spain and the US.</p>
 
-    <h2><a href="archives/1.html">Introducing the streamR package</a></h2>
+<p><a href="http://themonkeycage.org/2013/06/09/30822/">Click for more</a></p>
+<p>Featured on the Atlantic: <a href="http://www.theatlantic.com/international/archive/2013/06/these-charts-show-how-crucial-twitter-is-for-the-turkey-protesters/276798/">These Charts Show How Crucial Twitter Is for the Turkey Protesters.</a>
+      
+      <hr />
 
+<div class="header">
+  <b>The Monkey Cage/Al Jazeera | 1 June 2013</b>
+      <h3><a href="http://themonkeycage.org/2013/06/01/a-breakout-role-for-twitter-extensive-use-of-social-media-in-the-absence-of-traditional-media-by-turks-in-turkish-in-taksim-square-protests/">A Breakout Role for Twitter? Extensive Use of Social Media in the Absence of Traditional Media in Taksim Square Protests</a></h3>
+      </div>
+      <em>Co-authored with Megan Metzger</em>
+    <p>Over the past several years the role of social media in promoting, organizing, and responding to protest and revolution has been a hot topic of conversation. From Occupy Wall Street to the Arab Spring Revolutions, social media has been at the center of many of the largest, most popular demonstrations of political involvement. The protests taking place in Turkey add to this growing trend, and are already beginning to add new layers to our understanding of how social media can contribute to public participation.</p>
+
+<p><a href="http://themonkeycage.org/2013/06/01/a-breakout-role-for-twitter-extensive-use-of-social-media-in-the-absence-of-traditional-media-by-turks-in-turkish-in-taksim-square-protests/">Click for more</a></p>
+<p> Featured on Al Jazeera: <a href="http://www.aljazeera.com/indepth/opinion/2013/06/201361212350593971.html">A breakout role for Twitter in the Taksim Square protests?</a>
+      
+      <hr />
+
+<div class="header">
+  <b>Agenda Pública, eldiario.es | 12 February 2013</b>
+      <h3><a href="http://www.eldiario.es/agendapublica/blog/castigamos-corrupcion_6_100499961.html">¿Por qué no castigamos la corrupción?</a></h3>
+      </div>
+      <em>Co-authored with Pablo Fernández-Vázquez and Gonzalo Rivero</em>
+    <p>Las causas de la persistencia de la corrupción en nuestras instituciones son múltiples, en nuestra opinión, una de ellas se encuentra en la ausencia de un castigo en las urnas. Aquellos casos de corrupción que produjeron un enriquecimiento del municipio no generaron ningún tipo de consecuencias electorales. En definitiva, no se castiga porque se tolere la corrupción en sí, sino porque se valoran los beneficios indirectos de la misma</p>
+
+<p><a href="http://www.eldiario.es/agendapublica/blog/castigamos-corrupcion_6_100499961.html">Click for more</a></p>
+
+      
+      <hr />
+
+<div class="header">
+  <b>Blog | 22 January 2013</b>
+      <h3><a href="archives/1.html">Introducing the streamR package</a></h3>
+      </div>
 <p>I just released version 0.1 of my R package <code>streamR</code> on <a href="http://cran.r-project.org/web/packages/streamR/">CRAN</a>. This package includes a series of functions that give R users access to Twitter&#39;s <a href="https://dev.twitter.com/docs/streaming-apis">Streaming API</a>, as well as a tool that parses the captured tweets and transforms them in R data frames, which can then be used in subsequent analyses. <code>streamR</code> supports authentication via OAuth and the <code>ROAuth</code> package, as well as basic authentication with screen name and password.</p>
 
 <p>This package is not a substitute to the already existing <code>twitteR</code> package, but rather a complement. While Jeff Gentry&#39;s very useful package interacts with the RESTful API, mine focuses on the Streaming API, and allows R users to capture tweets in (virtually) real time. It is thus comparable to libraries such as <a href="http://pypi.python.org/pypi/tweetstream">tweetstream</a> for python, <a href="https://github.com/intridea/tweetstream">TweetStream</a> for Ruby or <a href="https://github.com/aivis/user-stream">user-stream</a> for javascript/node.js. Combined, these two packages are very powerful tools for researchers interested in analyzing Twitter data.</p>
@@ -136,45 +263,41 @@
 <p>In this post I describe and illustrate the four current functions included in the package, which I hope can be useful to other R users. For any question, or to report any bug, you can contact me at pablo.barbera[at]nyu.edu or via twitter (<a href="http://www.twitter.com/p_barbera">@p_barbera</a>).</p>
 
 <p><a href="archives/1.html">Click for more</a></p>
+      
+      <hr />
 
-</div>
+<div class="header">
+  <b>Other | 4 November 2012</b>
+      <h3><a href="www.pablobarbera.com/timeline.html">The 2012 Presidential Election Campaign on Twitter</a></h3>
+      </div>
+<p><a href="http://pablobarbera.com/timeline/">This interactive figure</a> shows how many times Obama and Romney have been mentioned on Twitter during the campaign.</p>
 
-<div class="span4" style="margin-bottom: 6cm; margin-top: 0.5cm";>
+     
+      <hr />
 
-    <h4>Published</h4>
-    <div class="date"><span>26 November 2013</span></div>
 
-    </div>
 
-<div class="span4" style="margin-bottom: 17cm">
 
-    <h4>Published</h4>
-    <div class="date"><span>09 September 2013</span></div>
+        </div><!--/span-->
+      </div><!--/row-->
 
-    </div>
+      <hr />
 
-<div class="span4">
+<!--
+      <footer>
+        <p><i class="icon-home"></i> 1234 main St.&nbsp;&nbsp;<i class="icon-map-marker"></i> Anytown, XX 12345&nbsp;&nbsp;<i class="icon-signal"></i> (555)123-4567&nbsp;&nbsp;<i class="icon-globe"></i> www.yoursite.com&nbsp;&nbsp;<i class="icon-envelope"></i> John.doe@domainname.com </p>
+      </footer>
 
-    <h4>Published</h4>
-    <div class="date"><span>22 January 2013</span></div>
+    </div><!--/.container-->
 
-    </div> 
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../js/jquery.js"></script>
-    <script src="../js/bootstrap-transition.js"></script>
-    <script src="../js/bootstrap-modal.js"></script>
-    <script src="../js/bootstrap-dropdown.js"></script>
-    <script src="../js/bootstrap-scrollspy.js"></script>
-    <script src="../js/bootstrap-tab.js"></script>
-    <script src="../js/bootstrap-tooltip.js"></script>
-    <script src="../js/bootstrap-popover.js"></script>
-    <script src="../js/bootstrap-button.js"></script>
-    <script src="../js/bootstrap-collapse.js"></script>
-    <script src="../js/bootstrap-carousel.js"></script>
-    <script src="../js/bootstrap-typeahead.js"></script>
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/myresume.js"></script>
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,85 +6,279 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta property="twitter:account_id" content="4515151" />
-
+	
     <!-- Le styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link href="css/myresume.css" rel="stylesheet">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">
+  
+    <style>
+      body {
+        padding-top: 40px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+
   </head>
 
   <body>
 
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="index.html">Pablo Barberá</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
+<div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a href="http://www.pablobarbera.com/" class="brand" href="#">Pablo Barberá</a>
+          <ul class="nav navbar-nav">
               <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="research.html">Research</a></li>
-              <li><a href="code.html">Code</a></li>
-               <li><a href="blog/index.html">Blog</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+              <li><a href="#research">Research</a></li>
+              <li><a href="#code">Code</a></li>
+              <li><a href="#teaching">Teaching</a></li>
+              <li><a href="blog/index.html">Blog</a></li>
+          </ul>                
 
+            </div>
+        </div><!-- /navbar-inner -->
+    </div><!-- /navbar -->
+
+      
     <div class="container">
+      <div class="row">
+        <div class="span4">
+			<div class="well">
+                <div class="avatar">
+                    <img src="img/avatar.jpg" />
+                </div><!--/avatar -->
+                <br class="clearfix" />
+                
+                <div class="bio">
+                    <h1>Pablo Barberá</h1>
+					<p>Ph.D. Candidate in Politics </br> New York University</p>
+          
+                </div><!--/bio -->
+                <br class="clearfix" />
+                
+                <div class="contact">
+					<p>19 W 4th Street, 2nd Floor <i class="icon-map-marker"></i></p>
+          <p>New York, NY <i class="icon-home"></i></p>
+					<p><a href="http://www.pablobarbera.com">www.pablobarbera.com</a> <i class="icon-globe"></i></p>
+					<p><a href="mailto:pablo.barbera[at]nyu.edu">pablo.barbera@nyu.edu</a> <i class="icon-envelope"></i></p>
+          <p><a href="http://www.twitter.com/p_barbera/">@p_barbera</a> <i class="fa fa-twitter"></i></p>
+          <p><a href="http://www.github.com/pablobarbera/">pablobarbera</a> <i class="fa fa-github"></i></p>
+                </div><!--/contact -->
+                <div align="center"><a class="btn no-radius btn-resume" href="https://www.dropbox.com/s/swgxhucu808x4x4/cv_barbera.pdf"><i class="fa fa-file-pdf-o"></i> Download my CV</a></div>
+                <br class="clearfix" />
 
-     <img src="main_photo.jpg" width="300" height="310" align="right" style="padding:5px;"/> <h2>About me</h2>
-      <p>I am a Ph.D. candidate in the <a href="http://politics.as.nyu.edu/page/home">Department of Politics</a> at <a href="www.nyu.edu">New York University</a>. My primary areas of research include social media and politics, electoral institutions and behavior, and political corruption.</p>
 
-<p>I received a BA and MA in Political Science and Public Administration at the <a href="http://www.upf.edu/dcpis/">Pompeu Fabra University</a> in Barcelona. I also have a Master of Research in Political Science at the <a href="http://www.eui.eu/DepartmentsAndCentres/PoliticalAndSocialSciences/Index.aspx">European University Institute</a>, in Florence.</p>
+               
+			</div><!--/.well -->
 
-<p>On this website you will find information about myself and my research.</p>
+<a class="twitter-timeline" href="https://twitter.com/p_barbera" data-widget-id="488027846829305856">Tweets by @p_barbera</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-<h2>Contact</h2>
 
-<p>Email: pablo.barbera[at]nyu.edu</p>
 
-<p>Twitter: <a href="http://twitter.com/p_barbera">@p_barbera</a></p>
 
-    </div> <!-- /container -->
+        </div><!--/span-->
+		
+        <div class="span8">
+          <div class="hero-unit">
+            <p>I am a Ph.D. candidate in the <a href="http://politics.as.nyu.edu/page/home">Department of Politics</a> at <a href="www.nyu.edu">New York University</a> and a graduate fellow in the <a href="http://smapp.nyu.edu">Social Media and Political Participation lab</a>. My primary areas of research include social media and politics, electoral institutions and behavior, and political corruption. On this website you will find information about myself and my research.</p>
+		  </div>
+
+<div class="header">
+
+      <h2>Dissertation Research</h2></br>
+      </div>
+      The question motivating my dissertation is whether the social consumption of political information through social media induces moderation in citizens' ideological positions. As usage of social networking platforms like Facebook or Twitter grows, more individuals are exposed to news and opinions that are curated and framed by their personal networks. Understanding the consequences of this change in citizens' news diet on their political behavior informs our knowledge about standing questions on the nature of public opinion, stability and change in partisanship and ideology, and the importance of peer effects.</br></br>
+          <div class="row">
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> <a data-toggle='collapse' data-target="#paper1">A Theory of Opinion Dynamics on Social Media</a></h4>
+              <div id="paper1" class="panel-collapse collapse out"><p>Social media platforms dramatically lower the cost of interpersonal communication beyond each citizen's immediate personal network. As a result, individuals are now increasingly exposed to political content shared by weak social ties, which are more ideologically diverse. Here I build an agent-based model of endogenous ideal points to show that increased exposure to political diversity induces political moderation, which in turn reduces mass-level political polarization. </p></div>
+            </div><!--/span-->
+          </br></br>
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> <a data-toggle='collapse' data-target="#paper2">Bayesian Ideal Point Estimation Using Twitter Data</a></h4>
+              <div id="paper2" class="panel-collapse collapse out"><p>Here I develop a new method to estimate the ideological positions of political actors and citizens from the structure of the social media networks in which they are embedded. To validate it, I compute ideal points for a large sample of both elite and mass public Twitter users in the US and five European countries. To illustrate one potential contribution, I examine ideological polarization in online behavior in the 2012 presidential election campaign in the US. </p></div>
+            </div><!--/span-->
+            </br></br>
+      <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> <a data-toggle='collapse' data-target="#paper3">Social Media and the Comparative Dynamics of Political Polarization</a></h4>
+              <div id="paper3" class="panel-collapse collapse out"><p>This paper provides comparative evidence from surveys and social media demonstrating that exposure to political diversity on social networking sites reduces political polarization. Contrary to the widely held belief that social media sites create "echo chambers", my findings underscore the promise of social media to create spaces for political deliberation. </p></div>
+            </div><!--/span-->
+      <a name="research"></a> 
+          </div><!--/row-->
+
+		  
+		  <div class="header">
+      <hr />
+			<h2>Recent Publications</h2></br>
+      </div>
+          <div class="row">
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Birds of the Same Feather Tweet Together. Bayesian Ideal Point Estimation Using Twitter Data. </h4>
+              Forthcoming in <em>Political Analysis</em>
+              <p>The structure of the social networks in which political actors and citizens are embedded can be a source of information about their ideological positions. <a data-toggle='collapse' data-target='#abstract1'>Expand abstract »</a><div id='abstract1' class='collapse out'> Politicians and citizens increasingly engage in political conversations on social media outlets such as Twitter. In this paper I show that the structure of the social networks in which they are embedded can be a source of information about their ideological positions. Under the assumption that social networks are homophilic, I develop a Bayesian Spatial Following model that considers ideology as a latent variable, whose value can be inferred by examining which politics actors each user is following. This method allows us to estimate ideology for more actors than any existing alternative, at any point in time and across many polities. I apply this method to estimate ideal points for a large sample of both elite and mass public Twitter users in the US and five European countries. Thee estimated positions of legislators and political parties replicate conventional measures of ideology. The method is also able to successfully classify individuals who state their political preferences publicly and a sample of users matched with their party registration records. To illustrate the potential contribution of these estimates, I examine the extent to which online behavior during the 2012 US presidential election campaign is clustered along ideological lines. </div>
+              <a href="http://files.nyu.edu/pba220/public/barbera_twitter_ideal_points.pdf">Pre-print</a> | <a href="http://files.nyu.edu/pba220/public/supplementary_materials.pdf">Online appendix</a> | <a href="http://dx.doi.org/10.7910/DVN/26589">Replication materials</a> | <a href="https://github.com/pablobarbera/twitter_ideology">GitHub tutorial</a></p>
+            </div><!--/span-->
+
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Social Media and Political Communication: A survey of Twitter users during the 2013 Italian general election </h4>
+              <em>Italian Political Science Review</em>, 2013. Co-authored with Cristian Vaccari, Augusto Valeriani, Richard Bonneau, John T. Jost, Jonathan Nagler, and Joshua Tucker.
+                 <p><a href="http://www.rivisteweb.it/doi/10.1426/75245">Link</a> | <a data-toggle='collapse' data-target='#abstract2'>Expand abstract »</a><div id='abstract2' class='collapse out'>Social media have become increasingly relevant in election campaigns, as both politicians and citizens have integrated them into their communication repertoires. However, little is known about which types of citizens employ these tools to discuss politics and stay informed about current affairs and how they integrate the contents and connections they encounter online with their offline repertoires of political action. In order to address these questions, we devised an innovative online survey involving a random sample representative of Italians who communicated about the 2013 general election on Twitter. Our results show that Twitter political users in Italy are disproportionately male, younger, better educated, more interested in politics, and ideologically more left-wing than the population as a whole. Moreover, there is a strong correlation between online and offline political communication, and Twitter users often relay the political contents they encounter on the web in their face-to-face conversations. Although the political users of social media are not representative of the population, their greater propensity to engage in political conversations both online and offline make them important channels of personal communication and allow the contents that circulate on the web to diffuse among populations that are much broader than those that engage with social media. The electoral significance of these digital platforms thus reaches well beyond the immediate audiences that are exposed to political contents through them. </div></p>
+            </div><!--/span-->
+            <div class="span8"><a href="research.html">Full list of publications &#65515;</a></div>
+          </div><!--/row-->
+		  
+<div class="header">
+      <hr />
+      <h2>Work in progress</h2></br>
+      </div>
+          <div class="row">
+            
+              <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Rooting out corruption or rooting for corruption? The Heterogenous Electoral Consequences of Scandals </h4>
+              Co-authored with Pablo Fernández-Vázquez and Gonzalo Rivero. Revise and resubmit at <em>Political Science Research and Methods</em>
+              <p><a href="http://files.nyu.edu/pba220/public/rooting_out_corruption.pdf">Working paper</a>, July 2014 | <a data-toggle='collapse' data-target='#abstract3'>Expand abstract »</a><div id='abstract3' class='collapse out'> Corruption scandals have been found to have significant but mild electoral effects in the comparative literature (Golden, 2006). However, most studies have assumed that voters punish all kinds of illegal practices. This article challenges this assumption by distinguishing between two types of corruption, according to the type of welfare consequences they have for the constituency. This hypothesis is tested using data from the 2011 Spanish local elections. We exploit the abundance of corruption allegations associated with the Spanish housing boom, which generated income gains for a wide segment of the electorate in the short-term. We find that voters ignore corruption when there are side benefits to it, and that punishment is only administered in those cases in which they do not receive compensation. </div></p>
+            </div><!--/span-->
+
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Leaders or Followers? Measuring Political Responsiveness in the U.S. Congress Using Social Media Data. </h4>
+              Co-authored with Richard Bonneau, Patrick Egan, John T. Jost, Jonathan Nagler and Joshua Tucker
+              <p><a href="http://files.nyu.edu/pba220/public/barbera_twitter_ideal_points.pdf">Working paper</a>, June 2014 | <a data-toggle='collapse' data-target='#abstract4'>Expand abstract »</a><div id='abstract4' class='collapse out'> Are legislators responsive to their constituents in their public communication? To what extent are they able to shape the agenda that the mass public cares about, as expressed by the issues they discuss? We address this twofold question with an analysis of all tweets sent by Members of the U.S. Congress and a random sample of their followers from January 2013 to March 2014. Using a Latent Dirichlet Allocation model, we extract topics that represent the diversity of issues that legislators and ordinary citizens discuss on this social networking site. Then, we exploit variation in the distribution of topics over time to test whether Members of Congress lead or follow their constituents in their selection of issues to discuss, employing a Granger-causality frame- work. We find that legislators are responsive in their public statements to their constituents, but also that they have limited influence on their followers’ public agenda. To further understand the mechanisms that explain political responsiveness, we also examine whether Members of Congress are more responsive to specific constituents groups, showing that they are more influenced by co-partisans, politically interested citizens, and social media users located within their constituency. </div></p>
+            </div><!--/span-->
+
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Vague concepts in survey questions:
+          A general problem illustrated with the left-right scale. </h4>
+              Co-authored with Paul Bauer, Kathrin Ackermann and Aaron Venetz. Under review.
+              <p><a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2467595">Working paper</a>, June 2014 | <a data-toggle='collapse' data-target='#abstract5'>Expand abstract »</a><div id='abstract5' class='collapse out'> This study aims at pointing at an important problem: Vague concepts in survey questions may trigger differential associations and, thus, impact respondents’ answers. If these associations vary systematically with other explanatory variables it may introduce bias in observed empirical relationships. We illustrate this problem relying on a survey of 3467 Germans that were asked probing questions regarding the concepts left and right after placing themselves on the left-right scale. We find that individuals attribute very different meanings to the concepts “left” and “right”. This seems to impact measurement values on the left-right scale. In addition, our results provide evidence that associations are systematic in nature, which could bias the effects of other explanatory variables. These results indicate that the interpersonal comparability of this measurement instrument (the left-right scale) across individuals is impaired. We discuss various solutions and recommend replacing the left-right scale with a battery of questions about issues with more specific ideological content in future surveys. Our findings have important implications for survey research in general, and underscore the necessity to investigate to what extent “vague” concepts mean the same for different individuals that belong to the target population. </div></p>
+            </div><!--/span-->
+
+            <div class="span8">
+              <h4><i class="fa fa-file-text-o"></i> Understanding the political representativeness of Twitter users. </h4>
+              Co-authored with Gonzalo Rivero. Conditional acceptance at <em>Social Science Computer Review</em>.
+              <p><a href="http://files.nyu.edu/pba220/public/barbera_rivero_2013.pdf">Working paper</a>, December 2013 | <a data-toggle='collapse' data-target='#abstract6'>Expand abstract »</a><div id='abstract6' class='collapse out'> In this article we analyze the structure and content of the political conversations that took place through the micro-blogging platform Twitter in the context of the 2011 Spanish legislative elections and the 2012 US presidential elections. Using a unique database of nearly 70 million tweets collected during both election campaigns, we find that Twitter replicates most of the existing inequalities in public political exchanges. Twitter users who write about politics tend to be male, to live in urban areas, and to have extreme ideological preferences. Our results have important implications for future research on the relationship between social media and politics, since they highlight the need to correct for potential biases derived from these sources of inequality. </div></p>
+            </div><!--/span-->
+                  <div class="span8"><a href="research.html#progress">Full list of current research projects &#65515;</a></div>
+      <a name="code"></a>   
+          </div><!--/row-->
+
+		  <div class="header">
+      <hr />
+			<h2>Code</h2></br>
+		  </div>
+		  
+          <div class="row-fluid">
+            <div class="span6">
+              <h4><i class="fa fa-twitter-square"></i> streamR</h4>
+              <p>This R package, available on <a href="http://cran.r-project.org/web/packages/streamR/index.html">CRAN</a>, provides access to Twitter's Streaming API via R. See the <a href="http://www.pablobarbera.com/code/streamR.html">vignette</a> for a tutorial on how to use it. The latest version is on this <a href="https://github.com/pablobarbera/streamR">GitHub repository</a>. </p>
+            </div><!--/span-->
+            <div class="span6">
+              <h4><i class="fa fa-facebook-square"></i> Rfacebook</h4>
+              <p>This R package, available on <a href="http://cran.r-project.org/web/packages/Rfacebook/index.html">CRAN</a>, provides access to Facebook's Graph API via R. See the <a href="http://www.pablobarbera.com/code/Rfacebook.html">vignette</a> for a tutorial on how to use it. The latest version is on this <a href="https://github.com/pablobarbera/Rfacebook">GitHub repository</a>. </p>
+            </div><!--/span-->
+          </div><!--/row-->
+		  <div class="row-fluid">
+            <div class="span6">
+              <h4><i class="fa fa-gear"></i> smappR</h4>
+              <p>Internal R package used by the <a href='smapp.nyu.edu'>Social Media and Political Participation Lab</a> at NYU. See GitHub repository <a href="https://github.com/SMAPPNYU/smappR">for latest version and documentation</a>.</p>
+            </div><!--/span-->
+
+            <div class="span6">
+              <h4> </br></h4>
+              <p>For more code and other materials, check <a href="https://github.com/pablobarbera/">my GitHub repositories</a> </p>
+            </div><!--/span-->
+      <a name="teaching"></a> 
+          </div><!--/row-->
+		  
+		  <div class="header">
+      <hr />
+			<h2>Teaching Materials</h2></br>
+		  </div>
+		  
+          <div class="row">
+            <div class="span8">
+              <h4><i class="icon-plus"></i> NYU PhD Course "Quantitative Methods for Political Science 3"</h4>
+              <p>See this <a href="https://github.com/pablobarbera/quant3materials">GitHub repository</a> for recitation materials on maximum likelihood, duration models, time-series analysis, and Bayesian statistics.</p>
+            </div><!--/span-->
+            <div class="span8">
+              <h4><i class="icon-plus"></i> NYU-Abu Dhabi Course "Social Media and Political Participation"</h4>
+              <p>The recitation materials for the <a href="https://files.nyu.edu/jat7/public/POLSC-AD%20160J_Tucker_Syllabus.pdf">course</a>, available on this <a href="https://github.com/pablobarbera/NYU-AD-160J">GitHub repository</a>, provide an introduction to statistical analysis using R, and show how to harvest and analyze data from Twitter and Facebook. </p>
+            </div><!--/span-->
+			     <div class="span8">
+              <h4><i class="icon-plus"></i> NYU Politics DataLab Workshops</h4>
+              <p>These two-hour workshops, taught in Spring and Fall 2013, give an overview of how to <a href="https://github.com/pablobarbera/workshop">scrape Twitter and web data with R</a> and how to <a href="https://github.com/pablobarbera/Rdataviz">visualize data with R and ggplot2</a>. </p>
+            </div><!--/span-->
+            <div class="span8">
+              <h4><i class="icon-plus"></i> Sample syllabus for a course on "Comparative Electoral Behavior"</h4>
+              <p>Syllabus for a class on "<a href="https://files.nyu.edu/pba220/public/syllabus.pdf">Elections in Developed Democracies: Institutions, Parties, and Voters</a>", submitted as part of the requirements for obtaining a PhD degree in Politics at New York University.</p>
+            </div><!--/span-->
+          </div><!--/row-->
+
+      <div class="header">
+      <hr />
+      <h2>Recent Blog Posts</h2></br>
+
+      </div>
+      
+          <div class="row">
+            <div class="span8">
+              <h4><i class="fa fa-external-link-square"></i> <a href="http://www.huffingtonpost.com/pablo-barbera/tweeting-the-revolution-s_b_4831104.html">Tweeting the Revolution: Social Media Use and the #Euromaidan Protests</a></h4>
+              <p>Co-authored with Megan Metzger. Published on the <a href="http://www.huffingtonpost.com">Huffington Post</a>.</p>
+            </div><!--/span-->
+          <div class="span8">
+              <h4><i class="fa fa-external-link-square"></i> <a href="http://www.washingtonpost.com/blogs/monkey-cage/wp/2013/12/04/strategic-use-of-facebook-and-twitter-in-ukrainian-protests/">How Ukrainian protestors are using Twitter and Facebook</a></h4>
+              <p>Co-authored with Megan Metzger. Published on the <a href="http://www.washingtonpost.com/blogs/monkey-cage">The Monkey Cage/Washington Post</a>.</p>
+            </div><!--/span-->
+            <div class="span8">
+              <h4><i class="fa fa-external-link"></i> <a href="http://www.pablobarbera.com/blog/archives/3.html">Introducing the Rfacebook package</a></h4>
+              <p></p>
+            </div><!--/span-->
+            <div class="span8">
+              <h4><i class="fa fa-external-link"></i> <a href="http://www.pablobarbera.com/blog/archives/2.html">Who is tweeting about #Syria, and how?</a></h4>
+              <p></p>
+               </div><!--/span-->
+                        <div class="span8">
+              <h4><i class="fa fa-external-link-square"></i> <a href="http://themonkeycage.org/2013/06/09/30822/">The Dynamics of Information Diffusion in the Turkish Protests</a></h4>
+              <p>Co-authored with Sandra González-Bailón. Published on the <a href="http://themonkeycage.org/">The Monkey Cage</a>. Featured on <a href="http://www.theatlantic.com/international/archive/2013/06/these-charts-show-how-crucial-twitter-is-for-the-turkey-protesters/276798/">The Atlantic</a>.</p>
+            </div><!--/span-->
+                        <div class="span8">
+              <h4><i class="fa fa-external-link-square"></i> <a href="http://themonkeycage.org/2013/06/01/a-breakout-role-for-twitter-extensive-use-of-social-media-in-the-absence-of-traditional-media-by-turks-in-turkish-in-taksim-square-protests/">A Breakout Role for Twitter? Extensive Use of Social Media in the Absence of Traditional Media by Turks in Turkish in Taksim Square Protests</a></h4>
+              <p>Co-authored with Megan Metzger. Published on the <a href="http://themonkeycage.org/">The Monkey Cage</a></p>
+            </div><!--/span-->
+      <div class="span8">
+              <h4><i class="fa fa-external-link"></i> <a href="http://www.pablobarbera.com/blog/archives/1.html">Introducing the streamR package</a></h4>
+              <p></p>
+             </div><!--/span-->
+                    <div class="span8"><h3><a href="http://www.pablobarbera.com/blog">Blog Archive &#65515;</a></h3></div>
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr />
+
+<!--
+      <footer>
+        <p><i class="icon-home"></i> 1234 main St.&nbsp;&nbsp;<i class="icon-map-marker"></i> Anytown, XX 12345&nbsp;&nbsp;<i class="icon-signal"></i> (555)123-4567&nbsp;&nbsp;<i class="icon-globe"></i> www.yoursite.com&nbsp;&nbsp;<i class="icon-envelope"></i> John.doe@domainname.com </p>
+      </footer>
+
+    </div><!--/.container-->
+
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
-    <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/myresume.js"></script>
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
