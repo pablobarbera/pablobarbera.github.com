@@ -1,3 +1,7 @@
 gephi/.DS_Store
 blog/topsy_counts.csv
 *.Rmd
+*.tex
+*.log
+*.gz
+*.cls
