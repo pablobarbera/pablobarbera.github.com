@@ -8,7 +8,7 @@
     "link": ""
   },
   "text": {
-    "title": "Follower Network of US Congress",
+    "title": "Twitter Network of US Congress",
     "more": "<h3>Description</h3><p>This network graph shows the relationships in the US Congress on Twitter. Each node represents a Twitter account of a Member of Congress, and a tie between two nodes represents a following relationship--that is, a tie is present only if a Member of Congress follows another Member of Congress on Twitter. The nodes are positioned according to a force-directed algorithm to move highly connected nodes close together and less connected nodes further apart. The colours represent chamber and party, with pale colors for Senators and bold colors for Representatives; red colors for Republicans and blue colors for Democrats.</p><h3>Data and Visualization</h3><p>Data was collected from Twitter's REST API using the smappR package and laid out with <a href=\"http://gephi.org/\">Gephi</a>. The interactive display is created with the Sigmajs Exporter for Gephi and the tools provided by the <a href=\"http://blogs.oii.ox.ac.uk/vis/\">InteractiveVis Project</a> at the Oxford Internet Institute.</p>",
     "intro": "Network of Members of Congress on Twitter"
   },
@@ -30,14 +30,14 @@
     "graphProperties": {
       "minEdgeSize": 1,
       "maxNodeSize": 20,
-      "maxEdgeSize": 1,
+      "maxEdgeSize": 0.1,
       "minNodeSize": 2
     },
     "drawingProperties": {
-      "labelThreshold": 1,
+      "labelThreshold": 12,
       "hoverFontStyle": "bold",
       "defaultEdgeType": "curve",
-      "defaultLabelColor": "#000",
+      "defaultLabelColor": "#fff",
       "defaultLabelHoverColor": "#fff",
       "defaultLabelSize": 14,
       "activeFontStyle": "bold",
