@@ -5,3 +5,4 @@ blog/topsy_counts.csv
 *.log
 *.gz
 *.cls
+*.DS_Store
