@@ -5,6 +5,7 @@
 <script type="text/javascript" src="js/dygraph-combined.js"></script>
 <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+
 <style>
 #sitemap { position: absolute; left: 50%; margin-left: -400px; top: 1%; margin-top: 50 px; }
 #header1 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 30px; }
@@ -23,7 +24,9 @@
   }
 </style>
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
 <body>
+
 <div id="sitemap">
 <b> &laquo; <a href="index.html">Back to Index</a>   &#8226;   Topic selection: </b>
 <select onchange="if (this.value) window.location.href=this.value" class="input-xxlarge">
@@ -132,9 +135,11 @@
 <div id="header1"><h3>Topic Usage Over Time:</h3></div>
 <div id="div1" style="width:600px">
 </div>
+
 <div id="div2" style="width:300px">
 <img src='img/words-plot-18.png'>
 </div>
+
 <div id="div3">
 <form class="form-inline">
 <b>Display:  </b>
@@ -164,9 +169,12 @@
     days 
 </form>
 </div>
+
+
 <div id="div4">
-Topic usage by elites: 0.56% all, <font color="blue">0.33% Senate Democrats</font>, <font color="red">0.74% Senate Republicans</font>, <font color="blue">0.25% House Democrats</font>, <font color="red">0.91% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/CongPalazzo">@CongPalazzo (R-MS)</a>, <a href="http://www.twitter.com/RepWalorski">@RepWalorski (R-IN)</a>, <a href="http://www.twitter.com/CongressmanDan">@CongressmanDan (R-MI)</a>, <a href="http://www.twitter.com/RepJeffMiller">@RepJeffMiller (R-FL)</a>, <a href="http://www.twitter.com/RepGuthrie">@RepGuthrie (R-KY)</a></br>Topic usage by media and public: 0.21% Media, 0.03% informed public, 0.00% random users, <font color="blue">0.04% Democratic supporters</font>, <font color="red">0.12% Republican supporters</font>.</br>
+Topic usage by elites: 0.56% all, <font color="blue">0.33% Senate Democrats</font>, <font color="red">0.74% Senate Republicans</font>, <font color="blue">0.25% House Democrats</font>, <font color="red">0.91% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/CongPalazzo">@CongPalazzo (R-MS)</a>, <a href="http://www.twitter.com/RepWalorski">@RepWalorski (R-IN)</a>, <a href="http://www.twitter.com/CongressmanDan">@CongressmanDan (R-MI)</a>, <a href="http://www.twitter.com/RepJeffMiller">@RepJeffMiller (R-FL)</a>, <a href="http://www.twitter.com/RepGuthrie">@RepGuthrie (R-KY)</a></br>Topic usage by media and public: 0.21% Media, 0.03% informed public, 0.01% random users, <font color="blue">0.04% Democratic supporters</font>, <font color="red">0.12% Republican supporters</font>.</br>
 </div>
+
 <div id="header2"><h3>Sample of representative tweets by Members of Congress:</h3></div>
 <div id="div5" style="width:500px">
 <blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>Cosponsored &amp; voted for the Veteran Access to Care Act, #4810. It passed 421-0 today. Our vets deserve the best care: http://t.co/Vbvx6ekia9</p> RepEdRoyce (@RepEdRoyce) <a href='https://twitter.com/RepEdRoyce/status/476432265963405312'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>The house passed the Veterans Access to Care Act which gives vets the option to seek private sector care if #VA wait time exceeds 30 days.</p> PeteSessions (@PeteSessions) <a href='https://twitter.com/PeteSessions/status/476425157549244416'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>RT @Transport: Fact: #WRRDA cuts red tape &amp; lets private sector do what it does best: create opportunities for more American #jobs. http://…</p> RepTomCotton (@RepTomCotton) <a href='https://twitter.com/RepTomCotton/status/468789790167801856'></a></blockquote>
@@ -183,6 +191,7 @@ Topic usage by elites: 0.56% all, <font color="blue">0.33% Senate Democrats</fon
 </div>
 <br><br>
 </div>
+
 <script type="text/javascript">
   var g;
   g = new Dygraph(
@@ -201,6 +210,7 @@ Topic usage by elites: 0.56% all, <font color="blue">0.33% Senate Democrats</fon
       labelsKMB: true,
     }          // options
   );
+
   function change(el) {
      g.setVisibility(el.id, el.checked);
   }
@@ -208,6 +218,7 @@ Topic usage by elites: 0.56% all, <font color="blue">0.33% Senate Democrats</fon
     value = input.value;
     g.adjustRoll(value);
   }
+
 </script>
 </body>
 </html>

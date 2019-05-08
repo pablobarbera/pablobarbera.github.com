@@ -5,6 +5,7 @@
 <script type="text/javascript" src="js/dygraph-combined.js"></script>
 <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+
 <style>
 #sitemap { position: absolute; left: 50%; margin-left: -400px; top: 1%; margin-top: 50 px; }
 #header1 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 30px; }
@@ -23,7 +24,9 @@
   }
 </style>
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
 <body>
+
 <div id="sitemap">
 <b> &laquo; <a href="index.html">Back to Index</a>   &#8226;   Topic selection: </b>
 <select onchange="if (this.value) window.location.href=this.value" class="input-xxlarge">
@@ -132,9 +135,11 @@
 <div id="header1"><h3>Topic Usage Over Time:</h3></div>
 <div id="div1" style="width:600px">
 </div>
+
 <div id="div2" style="width:300px">
 <img src='img/words-plot-89.png'>
 </div>
+
 <div id="div3">
 <form class="form-inline">
 <b>Display:  </b>
@@ -164,9 +169,12 @@
     days 
 </form>
 </div>
+
+
 <div id="div4">
-Topic usage by elites: 1.18% all, <font color="blue">0.23% Senate Democrats</font>, <font color="red">1.95% Senate Republicans</font>, <font color="blue">0.18% House Democrats</font>, <font color="red">2.35% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/RepReneeEllmers">@RepReneeEllmers (R-NC)</a>, <a href="http://www.twitter.com/RepJoePitts">@RepJoePitts (R-PA)</a>, <a href="http://www.twitter.com/SenJohnBarrasso">@SenJohnBarrasso (R-WY)</a>, <a href="http://www.twitter.com/SteveScalise">@SteveScalise (R-LA)</a>, <a href="http://www.twitter.com/RepPhilGingrey">@RepPhilGingrey (R-GA)</a></br>Topic usage by media and public: 0.70% Media, 0.08% informed public, 0.02% random users, <font color="blue">0.19% Democratic supporters</font>, <font color="red">0.80% Republican supporters</font>.</br>
+Topic usage by elites: 1.18% all, <font color="blue">0.23% Senate Democrats</font>, <font color="red">1.95% Senate Republicans</font>, <font color="blue">0.18% House Democrats</font>, <font color="red">2.35% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/RepReneeEllmers">@RepReneeEllmers (R-NC)</a>, <a href="http://www.twitter.com/RepJoePitts">@RepJoePitts (R-PA)</a>, <a href="http://www.twitter.com/SenJohnBarrasso">@SenJohnBarrasso (R-WY)</a>, <a href="http://www.twitter.com/SteveScalise">@SteveScalise (R-LA)</a>, <a href="http://www.twitter.com/RepPhilGingrey">@RepPhilGingrey (R-GA)</a></br>Topic usage by media and public: 0.70% Media, 0.08% informed public, 0.05% random users, <font color="blue">0.19% Democratic supporters</font>, <font color="red">0.80% Republican supporters</font>.</br>
 </div>
+
 <div id="header2"><h3>Sample of representative tweets by Members of Congress:</h3></div>
 <div id="div5" style="width:500px">
 <blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>Experiencing rising premiums, higher deductibles b/c of #Obamacare? Share #YourStory here: http://t.co/zRl1uqEaIN #stickershock</p> SaxbyChambliss (@SaxbyChambliss) <a href='https://twitter.com/SaxbyChambliss/status/410099924596822016'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>.@NBCNews reports Obama Admin knew 40-67% would lose current plans because of #Obamacare despite repeated promises. http://t.co/tRGe4kgEza</p> RepShimkus (@RepShimkus) <a href='https://twitter.com/RepShimkus/status/395183979860459520'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>What happened to “if you like your health care plan, you can keep your health care plan,” Mr. President? http://t.co/mL3ZXj2COC #Obamacare</p> RepGusBilirakis (@RepGusBilirakis) <a href='https://twitter.com/RepGusBilirakis/status/395197513885421568'></a></blockquote>
@@ -183,6 +191,7 @@ Topic usage by elites: 1.18% all, <font color="blue">0.23% Senate Democrats</fon
 </div>
 <br><br>
 </div>
+
 <script type="text/javascript">
   var g;
   g = new Dygraph(
@@ -201,6 +210,7 @@ Topic usage by elites: 1.18% all, <font color="blue">0.23% Senate Democrats</fon
       labelsKMB: true,
     }          // options
   );
+
   function change(el) {
      g.setVisibility(el.id, el.checked);
   }
@@ -208,6 +218,7 @@ Topic usage by elites: 1.18% all, <font color="blue">0.23% Senate Democrats</fon
     value = input.value;
     g.adjustRoll(value);
   }
+
 </script>
 </body>
 </html>

@@ -5,6 +5,7 @@
 <script type="text/javascript" src="js/dygraph-combined.js"></script>
 <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+
 <style>
 #sitemap { position: absolute; left: 50%; margin-left: -400px; top: 1%; margin-top: 50 px; }
 #header1 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 30px; }
@@ -23,7 +24,9 @@
   }
 </style>
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
 <body>
+
 <div id="sitemap">
 <b> &laquo; <a href="index.html">Back to Index</a>   &#8226;   Topic selection: </b>
 <select onchange="if (this.value) window.location.href=this.value" class="input-xxlarge">
@@ -132,9 +135,11 @@
 <div id="header1"><h3>Topic Usage Over Time:</h3></div>
 <div id="div1" style="width:600px">
 </div>
+
 <div id="div2" style="width:300px">
 <img src='img/words-plot-50.png'>
 </div>
+
 <div id="div3">
 <form class="form-inline">
 <b>Display:  </b>
@@ -164,9 +169,12 @@
     days 
 </form>
 </div>
+
+
 <div id="div4">
-Topic usage by elites: 0.42% all, <font color="blue">0.65% Senate Democrats</font>, <font color="red">0.36% Senate Republicans</font>, <font color="blue">0.48% House Democrats</font>, <font color="red">0.19% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/BlumenauerMedia">@BlumenauerMedia (D-OR)</a>, <a href="http://www.twitter.com/RepJohnSarbanes">@RepJohnSarbanes (D-MD)</a>, <a href="http://www.twitter.com/MarkeyMemo">@MarkeyMemo (D-MA)</a>, <a href="http://www.twitter.com/SenWhitehouse">@SenWhitehouse (D-RI)</a>, <a href="http://www.twitter.com/WaxmanClimate">@WaxmanClimate (D-CA)</a></br>Topic usage by media and public: 0.88% Media, 0.22% informed public, 0.19% random users, <font color="blue">0.95% Democratic supporters</font>, <font color="red">0.24% Republican supporters</font>.</br>
+Topic usage by elites: 0.42% all, <font color="blue">0.65% Senate Democrats</font>, <font color="red">0.36% Senate Republicans</font>, <font color="blue">0.48% House Democrats</font>, <font color="red">0.19% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/BlumenauerMedia">@BlumenauerMedia (D-OR)</a>, <a href="http://www.twitter.com/RepJohnSarbanes">@RepJohnSarbanes (D-MD)</a>, <a href="http://www.twitter.com/MarkeyMemo">@MarkeyMemo (D-MA)</a>, <a href="http://www.twitter.com/SenWhitehouse">@SenWhitehouse (D-RI)</a>, <a href="http://www.twitter.com/WaxmanClimate">@WaxmanClimate (D-CA)</a></br>Topic usage by media and public: 0.88% Media, 0.22% informed public, 0.17% random users, <font color="blue">0.95% Democratic supporters</font>, <font color="red">0.24% Republican supporters</font>.</br>
 </div>
+
 <div id="header2"><h3>Sample of representative tweets by Members of Congress:</h3></div>
 <div id="div5" style="width:500px">
 <blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>The @EPA's proposed standard for new power plants is a pragmatic step forward #ActOnClimate http://t.co/wcd0KOtcpg</p> MartinHeinrich (@MartinHeinrich) <a href='https://twitter.com/MartinHeinrich/status/381116012868816896'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>EPA’s proposed greenhouse gas rule for existing coal-fired power plants would raise utility prices on West Virginia families &amp; businesses.</p> RepShelley (@RepShelley) <a href='https://twitter.com/RepShelley/status/539458056397258754'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>W/new @EPA regs, great to see the Obama administration acting forcefully to reduce carbon pollution and combat climate change. #ActOnClimate</p> SenGillibrand (@SenGillibrand) <a href='https://twitter.com/SenGillibrand/status/381103012199948288'></a></blockquote>
@@ -183,6 +191,7 @@ Topic usage by elites: 0.42% all, <font color="blue">0.65% Senate Democrats</fon
 </div>
 <br><br>
 </div>
+
 <script type="text/javascript">
   var g;
   g = new Dygraph(
@@ -201,6 +210,7 @@ Topic usage by elites: 0.42% all, <font color="blue">0.65% Senate Democrats</fon
       labelsKMB: true,
     }          // options
   );
+
   function change(el) {
      g.setVisibility(el.id, el.checked);
   }
@@ -208,6 +218,7 @@ Topic usage by elites: 0.42% all, <font color="blue">0.65% Senate Democrats</fon
     value = input.value;
     g.adjustRoll(value);
   }
+
 </script>
 </body>
 </html>

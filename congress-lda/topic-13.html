@@ -5,6 +5,7 @@
 <script type="text/javascript" src="js/dygraph-combined.js"></script>
 <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+
 <style>
 #sitemap { position: absolute; left: 50%; margin-left: -400px; top: 1%; margin-top: 50 px; }
 #header1 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 30px; }
@@ -23,7 +24,9 @@
   }
 </style>
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
 <body>
+
 <div id="sitemap">
 <b> &laquo; <a href="index.html">Back to Index</a>   &#8226;   Topic selection: </b>
 <select onchange="if (this.value) window.location.href=this.value" class="input-xxlarge">
@@ -132,9 +135,11 @@
 <div id="header1"><h3>Topic Usage Over Time:</h3></div>
 <div id="div1" style="width:600px">
 </div>
+
 <div id="div2" style="width:300px">
 <img src='img/words-plot-13.png'>
 </div>
+
 <div id="div3">
 <form class="form-inline">
 <b>Display:  </b>
@@ -164,9 +169,12 @@
     days 
 </form>
 </div>
+
+
 <div id="div4">
-Topic usage by elites: 0.36% all, <font color="blue">0.35% Senate Democrats</font>, <font color="red">0.34% Senate Republicans</font>, <font color="blue">0.52% House Democrats</font>, <font color="red">0.21% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/RepRichmond">@RepRichmond (D-LA)</a>, <a href="http://www.twitter.com/RepMikeMichaud">@RepMikeMichaud (D-ME)</a>, <a href="http://www.twitter.com/BillOwensNY">@BillOwensNY (D-NY)</a>, <a href="http://www.twitter.com/HerreraBeutler">@HerreraBeutler (R-WA)</a>, <a href="http://www.twitter.com/repdavidscott">@repdavidscott (D-GA)</a></br>Topic usage by media and public: 0.29% Media, 0.11% informed public, 0.02% random users, <font color="blue">0.17% Democratic supporters</font>, <font color="red">0.06% Republican supporters</font>.</br>
+Topic usage by elites: 0.36% all, <font color="blue">0.35% Senate Democrats</font>, <font color="red">0.34% Senate Republicans</font>, <font color="blue">0.52% House Democrats</font>, <font color="red">0.21% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/RepRichmond">@RepRichmond (D-LA)</a>, <a href="http://www.twitter.com/RepMikeMichaud">@RepMikeMichaud (D-ME)</a>, <a href="http://www.twitter.com/BillOwensNY">@BillOwensNY (D-NY)</a>, <a href="http://www.twitter.com/HerreraBeutler">@HerreraBeutler (R-WA)</a>, <a href="http://www.twitter.com/repdavidscott">@repdavidscott (D-GA)</a></br>Topic usage by media and public: 0.29% Media, 0.11% informed public, 0.03% random users, <font color="blue">0.17% Democratic supporters</font>, <font color="red">0.06% Republican supporters</font>.</br>
 </div>
+
 <div id="header2"><h3>Sample of representative tweets by Members of Congress:</h3></div>
 <div id="div5" style="width:500px">
 <blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>This week is the 50th Anniversary of National Small Business Week. Small businesses create 2 out of every 3 new jobs. http://t.co/29V8GrFpao</p> RepTipton (@RepTipton) <a href='https://twitter.com/RepTipton/status/347042249772781570'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>RT @RepKinzinger: Small businesses create 7 out of every 10 new jobs. Happy National Small Business Week! http://t.co/CHxwHaLyOf</p> repaaronschock (@repaaronschock) <a href='https://twitter.com/repaaronschock/status/347039313499914242'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>It’s National Small Business Week! Here's to all MA small businesses—the engines of America's economic growth. http://t.co/zIhNQmZzV7</p> RepTierney (@RepTierney) <a href='https://twitter.com/RepTierney/status/465883604330246144'></a></blockquote>
@@ -183,6 +191,7 @@ Topic usage by elites: 0.36% all, <font color="blue">0.35% Senate Democrats</fon
 </div>
 <br><br>
 </div>
+
 <script type="text/javascript">
   var g;
   g = new Dygraph(
@@ -201,6 +210,7 @@ Topic usage by elites: 0.36% all, <font color="blue">0.35% Senate Democrats</fon
       labelsKMB: true,
     }          // options
   );
+
   function change(el) {
      g.setVisibility(el.id, el.checked);
   }
@@ -208,6 +218,7 @@ Topic usage by elites: 0.36% all, <font color="blue">0.35% Senate Democrats</fon
     value = input.value;
     g.adjustRoll(value);
   }
+
 </script>
 </body>
 </html>

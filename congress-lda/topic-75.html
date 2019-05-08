@@ -5,6 +5,7 @@
 <script type="text/javascript" src="js/dygraph-combined.js"></script>
 <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+
 <style>
 #sitemap { position: absolute; left: 50%; margin-left: -400px; top: 1%; margin-top: 50 px; }
 #header1 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 30px; }
@@ -23,7 +24,9 @@
   }
 </style>
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
 <body>
+
 <div id="sitemap">
 <b> &laquo; <a href="index.html">Back to Index</a>   &#8226;   Topic selection: </b>
 <select onchange="if (this.value) window.location.href=this.value" class="input-xxlarge">
@@ -132,9 +135,11 @@
 <div id="header1"><h3>Topic Usage Over Time:</h3></div>
 <div id="div1" style="width:600px">
 </div>
+
 <div id="div2" style="width:300px">
 <img src='img/words-plot-75.png'>
 </div>
+
 <div id="div3">
 <form class="form-inline">
 <b>Display:  </b>
@@ -164,9 +169,12 @@
     days 
 </form>
 </div>
+
+
 <div id="div4">
 Topic usage by elites: 0.65% all, <font color="blue">1.70% Senate Democrats</font>, <font color="red">0.44% Senate Republicans</font>, <font color="blue">0.26% House Democrats</font>, <font color="red">0.19% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/Sen_JoeManchin">@Sen_JoeManchin (D-WV)</a>, <a href="http://www.twitter.com/RepSpeier">@RepSpeier (D-CA)</a>, <a href="http://www.twitter.com/SenatorBoxer">@SenatorBoxer (D-CA)</a>, <a href="http://www.twitter.com/McCaskillOffice">@McCaskillOffice (D-MO)</a>, <a href="http://www.twitter.com/SenGillibrand">@SenGillibrand (D-NY)</a></br>Topic usage by media and public: 0.47% Media, 0.08% informed public, 0.03% random users, <font color="blue">0.18% Democratic supporters</font>, <font color="red">0.11% Republican supporters</font>.</br>
 </div>
+
 <div id="header2"><h3>Sample of representative tweets by Members of Congress:</h3></div>
 <div id="div5" style="width:500px">
 <blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>.@NYDailyNews editorial calls for passage of the #MJIA to remove sexual assault cases from chain of command http://t.co/Jcs3GXM5lP #passMJIA</p> SenGillibrand (@SenGillibrand) <a href='https://twitter.com/SenGillibrand/status/399234084544602112'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>Victims tell us that only by removing sexual assault cases from military chain of command will they have a fair shot at justice. #passMJIA</p> SenGillibrand (@SenGillibrand) <a href='https://twitter.com/SenGillibrand/status/400390465188397056'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>Only once we remove decision-making in sexual assault cases fr military chain of command will victims feel they have a shot at justice #MJIA</p> SenGillibrand (@SenGillibrand) <a href='https://twitter.com/SenGillibrand/status/359748404093517828'></a></blockquote>
@@ -183,6 +191,7 @@ Topic usage by elites: 0.65% all, <font color="blue">1.70% Senate Democrats</fon
 </div>
 <br><br>
 </div>
+
 <script type="text/javascript">
   var g;
   g = new Dygraph(
@@ -201,6 +210,7 @@ Topic usage by elites: 0.65% all, <font color="blue">1.70% Senate Democrats</fon
       labelsKMB: true,
     }          // options
   );
+
   function change(el) {
      g.setVisibility(el.id, el.checked);
   }
@@ -208,6 +218,7 @@ Topic usage by elites: 0.65% all, <font color="blue">1.70% Senate Democrats</fon
     value = input.value;
     g.adjustRoll(value);
   }
+
 </script>
 </body>
 </html>

@@ -5,6 +5,7 @@
 <script type="text/javascript" src="js/dygraph-combined.js"></script>
 <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+
 <style>
 #sitemap { position: absolute; left: 50%; margin-left: -400px; top: 1%; margin-top: 50 px; }
 #header1 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 30px; }
@@ -23,7 +24,9 @@
   }
 </style>
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
 <body>
+
 <div id="sitemap">
 <b> &laquo; <a href="index.html">Back to Index</a>   &#8226;   Topic selection: </b>
 <select onchange="if (this.value) window.location.href=this.value" class="input-xxlarge">
@@ -132,9 +135,11 @@
 <div id="header1"><h3>Topic Usage Over Time:</h3></div>
 <div id="div1" style="width:600px">
 </div>
+
 <div id="div2" style="width:300px">
 <img src='img/words-plot-59.png'>
 </div>
+
 <div id="div3">
 <form class="form-inline">
 <b>Display:  </b>
@@ -164,9 +169,12 @@
     days 
 </form>
 </div>
+
+
 <div id="div4">
-Topic usage by elites: 0.50% all, <font color="blue">0.23% Senate Democrats</font>, <font color="red">0.73% Senate Republicans</font>, <font color="blue">0.16% House Democrats</font>, <font color="red">0.88% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/RepAlanNunnelee">@RepAlanNunnelee (R-MS)</a>, <a href="http://www.twitter.com/virginiafoxx">@virginiafoxx (R-NC)</a>, <a href="http://www.twitter.com/RepTomPrice">@RepTomPrice (R-GA)</a>, <a href="http://www.twitter.com/RepJohnCampbell">@RepJohnCampbell (R-CA)</a>, <a href="http://www.twitter.com/RepPaulRyan">@RepPaulRyan (R-WI)</a></br>Topic usage by media and public: 0.35% Media, 0.04% informed public, 0.02% random users, <font color="blue">0.06% Democratic supporters</font>, <font color="red">0.17% Republican supporters</font>.</br>
+Topic usage by elites: 0.50% all, <font color="blue">0.23% Senate Democrats</font>, <font color="red">0.73% Senate Republicans</font>, <font color="blue">0.16% House Democrats</font>, <font color="red">0.88% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/RepAlanNunnelee">@RepAlanNunnelee (R-MS)</a>, <a href="http://www.twitter.com/virginiafoxx">@virginiafoxx (R-NC)</a>, <a href="http://www.twitter.com/RepTomPrice">@RepTomPrice (R-GA)</a>, <a href="http://www.twitter.com/RepJohnCampbell">@RepJohnCampbell (R-CA)</a>, <a href="http://www.twitter.com/RepPaulRyan">@RepPaulRyan (R-WI)</a></br>Topic usage by media and public: 0.35% Media, 0.04% informed public, 0.03% random users, <font color="blue">0.06% Democratic supporters</font>, <font color="red">0.17% Republican supporters</font>.</br>
 </div>
+
 <div id="header2"><h3>Sample of representative tweets by Members of Congress:</h3></div>
 <div id="div5" style="width:500px">
 <blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>The House Republican budget plan balances the budget in 10 years. President Obama's? Not so much. http://t.co/D0zlmh11no #BalancedBudget</p> RepDougCollins (@RepDougCollins) <a href='https://twitter.com/RepDougCollins/status/311840929222901760'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>The President's #budget grows the size of the government not the economy.  $1.1 trillion in new taxes and $8.2 trillion in new debt.</p> RepBillJohnson (@RepBillJohnson) <a href='https://twitter.com/RepBillJohnson/status/322013694521405440'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>Dem budget raises up to $1.5 trillion in taxes, increases spending 62% and adds $7.3 T in debt. #nofiscalsanity #spendingistheproblem</p> SenatorRisch (@SenatorRisch) <a href='https://twitter.com/SenatorRisch/status/315189704075137024'></a></blockquote>
@@ -183,6 +191,7 @@ Topic usage by elites: 0.50% all, <font color="blue">0.23% Senate Democrats</fon
 </div>
 <br><br>
 </div>
+
 <script type="text/javascript">
   var g;
   g = new Dygraph(
@@ -201,6 +210,7 @@ Topic usage by elites: 0.50% all, <font color="blue">0.23% Senate Democrats</fon
       labelsKMB: true,
     }          // options
   );
+
   function change(el) {
      g.setVisibility(el.id, el.checked);
   }
@@ -208,6 +218,7 @@ Topic usage by elites: 0.50% all, <font color="blue">0.23% Senate Democrats</fon
     value = input.value;
     g.adjustRoll(value);
   }
+
 </script>
 </body>
 </html>

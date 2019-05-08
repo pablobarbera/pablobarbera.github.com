@@ -5,6 +5,7 @@
 <script type="text/javascript" src="js/dygraph-combined.js"></script>
 <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+
 <style>
 #sitemap { position: absolute; left: 50%; margin-left: -400px; top: 1%; margin-top: 50 px; }
 #header1 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 30px; }
@@ -23,7 +24,9 @@
   }
 </style>
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
 <body>
+
 <div id="sitemap">
 <b> &laquo; <a href="index.html">Back to Index</a>   &#8226;   Topic selection: </b>
 <select onchange="if (this.value) window.location.href=this.value" class="input-xxlarge">
@@ -132,9 +135,11 @@
 <div id="header1"><h3>Topic Usage Over Time:</h3></div>
 <div id="div1" style="width:600px">
 </div>
+
 <div id="div2" style="width:300px">
 <img src='img/words-plot-52.png'>
 </div>
+
 <div id="div3">
 <form class="form-inline">
 <b>Display:  </b>
@@ -164,9 +169,12 @@
     days 
 </form>
 </div>
+
+
 <div id="div4">
-Topic usage by elites: 0.50% all, <font color="blue">0.66% Senate Democrats</font>, <font color="red">0.43% Senate Republicans</font>, <font color="blue">0.49% House Democrats</font>, <font color="red">0.44% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/RepMarcyKaptur">@RepMarcyKaptur (D-OH)</a>, <a href="http://www.twitter.com/SenWarren">@SenWarren (D-MA)</a>, <a href="http://www.twitter.com/RepTierney">@RepTierney (D-MA)</a>, <a href="http://www.twitter.com/JoyceBeatty">@JoyceBeatty (D-OH)</a>, <a href="http://www.twitter.com/SenMoCowan">@SenMoCowan (D-MA)</a></br>Topic usage by media and public: 1.76% Media, 1.75% informed public, 1.53% random users, <font color="blue">1.42% Democratic supporters</font>, <font color="red">1.13% Republican supporters</font>.</br>
+Topic usage by elites: 0.50% all, <font color="blue">0.66% Senate Democrats</font>, <font color="red">0.43% Senate Republicans</font>, <font color="blue">0.49% House Democrats</font>, <font color="red">0.44% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/RepMarcyKaptur">@RepMarcyKaptur (D-OH)</a>, <a href="http://www.twitter.com/SenWarren">@SenWarren (D-MA)</a>, <a href="http://www.twitter.com/RepTierney">@RepTierney (D-MA)</a>, <a href="http://www.twitter.com/JoyceBeatty">@JoyceBeatty (D-OH)</a>, <a href="http://www.twitter.com/SenMoCowan">@SenMoCowan (D-MA)</a></br>Topic usage by media and public: 1.76% Media, 1.75% informed public, 1.56% random users, <font color="blue">1.42% Democratic supporters</font>, <font color="red">1.13% Republican supporters</font>.</br>
 </div>
+
 <div id="header2"><h3>Sample of representative tweets by Members of Congress:</h3></div>
 <div id="div5" style="width:500px">
 <blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>RT @BlueRidgeNow: WEATHER UPDATE: The National Weather Service has upgraded tonight's winter weather conditions to an ice storm warning. #h…</p> RepMarkMeadows (@RepMarkMeadows) <a href='https://twitter.com/RepMarkMeadows/status/405052102696632320'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>'Dangerous winter storm' to close in on Northeast. Try to stay warm inside. Be careful out there! Call 311 for alerts.</p> cbrangel (@cbrangel) <a href='https://twitter.com/cbrangel/status/299895727113531392'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>My staff&amp; I are safe after the shooting@ Capitol today.Thx to the Capitol Police for keeping us safe. My thoughts are w/the victims&amp;families</p> SenatorBegich (@SenatorBegich) <a href='https://twitter.com/SenatorBegich/status/385854407272710144'></a></blockquote>
@@ -183,6 +191,7 @@ Topic usage by elites: 0.50% all, <font color="blue">0.66% Senate Democrats</fon
 </div>
 <br><br>
 </div>
+
 <script type="text/javascript">
   var g;
   g = new Dygraph(
@@ -201,6 +210,7 @@ Topic usage by elites: 0.50% all, <font color="blue">0.66% Senate Democrats</fon
       labelsKMB: true,
     }          // options
   );
+
   function change(el) {
      g.setVisibility(el.id, el.checked);
   }
@@ -208,6 +218,7 @@ Topic usage by elites: 0.50% all, <font color="blue">0.66% Senate Democrats</fon
     value = input.value;
     g.adjustRoll(value);
   }
+
 </script>
 </body>
 </html>

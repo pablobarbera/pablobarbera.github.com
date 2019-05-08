@@ -5,6 +5,7 @@
 <script type="text/javascript" src="js/dygraph-combined.js"></script>
 <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+
 <style>
 #sitemap { position: absolute; left: 50%; margin-left: -400px; top: 1%; margin-top: 50 px; }
 #header1 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 30px; }
@@ -23,7 +24,9 @@
   }
 </style>
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
 <body>
+
 <div id="sitemap">
 <b> &laquo; <a href="index.html">Back to Index</a>   &#8226;   Topic selection: </b>
 <select onchange="if (this.value) window.location.href=this.value" class="input-xxlarge">
@@ -132,9 +135,11 @@
 <div id="header1"><h3>Topic Usage Over Time:</h3></div>
 <div id="div1" style="width:600px">
 </div>
+
 <div id="div2" style="width:300px">
 <img src='img/words-plot-23.png'>
 </div>
+
 <div id="div3">
 <form class="form-inline">
 <b>Display:  </b>
@@ -164,9 +169,12 @@
     days 
 </form>
 </div>
+
+
 <div id="div4">
-Topic usage by elites: 0.77% all, <font color="blue">0.25% Senate Democrats</font>, <font color="red">0.20% Senate Republicans</font>, <font color="blue">2.54% House Democrats</font>, <font color="red">0.07% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/JuliaBrownley26">@JuliaBrownley26 (D-CA)</a>, <a href="http://www.twitter.com/RepCuellar">@RepCuellar (D-TX)</a>, <a href="http://www.twitter.com/RepRoybalAllard">@RepRoybalAllard (D-CA)</a>, <a href="http://www.twitter.com/USRepKCastor">@USRepKCastor (D-FL)</a>, <a href="http://www.twitter.com/RepWilson">@RepWilson (D-FL)</a></br>Topic usage by media and public: 0.39% Media, 0.38% informed public, 0.09% random users, <font color="blue">0.35% Democratic supporters</font>, <font color="red">0.07% Republican supporters</font>.</br>
+Topic usage by elites: 0.77% all, <font color="blue">0.25% Senate Democrats</font>, <font color="red">0.20% Senate Republicans</font>, <font color="blue">2.54% House Democrats</font>, <font color="red">0.07% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/JuliaBrownley26">@JuliaBrownley26 (D-CA)</a>, <a href="http://www.twitter.com/RepCuellar">@RepCuellar (D-TX)</a>, <a href="http://www.twitter.com/RepRoybalAllard">@RepRoybalAllard (D-CA)</a>, <a href="http://www.twitter.com/USRepKCastor">@USRepKCastor (D-FL)</a>, <a href="http://www.twitter.com/RepWilson">@RepWilson (D-FL)</a></br>Topic usage by media and public: 0.39% Media, 0.38% informed public, 0.08% random users, <font color="blue">0.35% Democratic supporters</font>, <font color="red">0.07% Republican supporters</font>.</br>
 </div>
+
 <div id="header2"><h3>Sample of representative tweets by Members of Congress:</h3></div>
 <div id="div5" style="width:500px">
 <blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>Congresswoman Johnson honors National Hispanic Heritage Month: http://t.co/X0wtMRursa via @YouTube</p> RepEBJ (@RepEBJ) <a href='https://twitter.com/RepEBJ/status/519853395541102592'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>Happy National Voter Registration Day! RT if you have already registered or register online in Sacramento County @ http://t.co/pxhVHqgJlB</p> RepBera (@RepBera) <a href='https://twitter.com/RepBera/status/382599096760295424'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>Today marks the beginning of National Hispanic Heritage Month. Let's celebrate the culture and contributions of Hispanic &amp; Latino Americans!</p> RepTerriSewell (@RepTerriSewell) <a href='https://twitter.com/RepTerriSewell/status/379416939338018817'></a></blockquote>
@@ -183,6 +191,7 @@ Topic usage by elites: 0.77% all, <font color="blue">0.25% Senate Democrats</fon
 </div>
 <br><br>
 </div>
+
 <script type="text/javascript">
   var g;
   g = new Dygraph(
@@ -201,6 +210,7 @@ Topic usage by elites: 0.77% all, <font color="blue">0.25% Senate Democrats</fon
       labelsKMB: true,
     }          // options
   );
+
   function change(el) {
      g.setVisibility(el.id, el.checked);
   }
@@ -208,6 +218,7 @@ Topic usage by elites: 0.77% all, <font color="blue">0.25% Senate Democrats</fon
     value = input.value;
     g.adjustRoll(value);
   }
+
 </script>
 </body>
 </html>

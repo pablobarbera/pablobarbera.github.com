@@ -5,6 +5,7 @@
 <script type="text/javascript" src="js/dygraph-combined.js"></script>
 <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+
 <style>
 #sitemap { position: absolute; left: 50%; margin-left: -400px; top: 1%; margin-top: 50 px; }
 #header1 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 30px; }
@@ -23,7 +24,9 @@
   }
 </style>
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
 <body>
+
 <div id="sitemap">
 <b> &laquo; <a href="index.html">Back to Index</a>   &#8226;   Topic selection: </b>
 <select onchange="if (this.value) window.location.href=this.value" class="input-xxlarge">
@@ -132,9 +135,11 @@
 <div id="header1"><h3>Topic Usage Over Time:</h3></div>
 <div id="div1" style="width:600px">
 </div>
+
 <div id="div2" style="width:300px">
 <img src='img/words-plot-8.png'>
 </div>
+
 <div id="div3">
 <form class="form-inline">
 <b>Display:  </b>
@@ -164,9 +169,12 @@
     days 
 </form>
 </div>
+
+
 <div id="div4">
-Topic usage by elites: 9.29% all, <font color="blue">0.56% Senate Democrats</font>, <font color="red">36.07% Senate Republicans</font>, <font color="blue">0.19% House Democrats</font>, <font color="red">0.33% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/SenatorSessions">@SenatorSessions (R-AL)</a>, <a href="http://www.twitter.com/MikeCrapo">@MikeCrapo (R-ID)</a>, <a href="http://www.twitter.com/SenDanCoats">@SenDanCoats (R-IN)</a>, <a href="http://www.twitter.com/SenBobCorker">@SenBobCorker (R-TN)</a>, <a href="http://www.twitter.com/McConnellPress">@McConnellPress (R-KY)</a></br>Topic usage by media and public: 6.15% Media, 0.06% informed public, 0.01% random users, <font color="blue">0.66% Democratic supporters</font>, <font color="red">3.05% Republican supporters</font>.</br>
+Topic usage by elites: 9.29% all, <font color="blue">0.56% Senate Democrats</font>, <font color="red">36.07% Senate Republicans</font>, <font color="blue">0.19% House Democrats</font>, <font color="red">0.33% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/SenatorSessions">@SenatorSessions (R-AL)</a>, <a href="http://www.twitter.com/MikeCrapo">@MikeCrapo (R-ID)</a>, <a href="http://www.twitter.com/SenDanCoats">@SenDanCoats (R-IN)</a>, <a href="http://www.twitter.com/SenBobCorker">@SenBobCorker (R-TN)</a>, <a href="http://www.twitter.com/McConnellPress">@McConnellPress (R-KY)</a></br>Topic usage by media and public: 6.15% Media, 0.06% informed public, 0.02% random users, <font color="blue">0.66% Democratic supporters</font>, <font color="red">3.05% Republican supporters</font>.</br>
 </div>
+
 <div id="header2"><h3>Sample of representative tweets by Members of Congress:</h3></div>
 <div id="div5" style="width:500px">
 <blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>In a letter, Sen. McConnell &amp; other GOP senators call on President Obama to withdraw EPA rule. http://t.co/cpQIkejPOU #Kentucky #coal</p> McConnellPress (@McConnellPress) <a href='https://twitter.com/McConnellPress/status/473944605658869760'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>Senator McConnell Pushes Measure to Stop #EPA from Destroying #Kentucky #Coal #Jobs; Senate Democrats Objec thttp://1.usa.gov/RooaEi</p> McConnellPress (@McConnellPress) <a href='https://twitter.com/McConnellPress/status/464129589737168896'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>Sen. McConnell is PRO-#COAL &amp; PRO-#JOBS. Read about Sen. McConnell's #SavingCoalJobsAct here: http://t.co/K4WW8k2UaB #Kentucky</p> McConnellPress (@McConnellPress) <a href='https://twitter.com/McConnellPress/status/380747385556570112'></a></blockquote>
@@ -183,6 +191,7 @@ Topic usage by elites: 9.29% all, <font color="blue">0.56% Senate Democrats</fon
 </div>
 <br><br>
 </div>
+
 <script type="text/javascript">
   var g;
   g = new Dygraph(
@@ -201,6 +210,7 @@ Topic usage by elites: 9.29% all, <font color="blue">0.56% Senate Democrats</fon
       labelsKMB: true,
     }          // options
   );
+
   function change(el) {
      g.setVisibility(el.id, el.checked);
   }
@@ -208,6 +218,7 @@ Topic usage by elites: 9.29% all, <font color="blue">0.56% Senate Democrats</fon
     value = input.value;
     g.adjustRoll(value);
   }
+
 </script>
 </body>
 </html>

@@ -5,6 +5,7 @@
 <script type="text/javascript" src="js/dygraph-combined.js"></script>
 <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+
 <style>
 #sitemap { position: absolute; left: 50%; margin-left: -400px; top: 1%; margin-top: 50 px; }
 #header1 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 30px; }
@@ -23,7 +24,9 @@
   }
 </style>
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
 <body>
+
 <div id="sitemap">
 <b> &laquo; <a href="index.html">Back to Index</a>   &#8226;   Topic selection: </b>
 <select onchange="if (this.value) window.location.href=this.value" class="input-xxlarge">
@@ -132,9 +135,11 @@
 <div id="header1"><h3>Topic Usage Over Time:</h3></div>
 <div id="div1" style="width:600px">
 </div>
+
 <div id="div2" style="width:300px">
 <img src='img/words-plot-84.png'>
 </div>
+
 <div id="div3">
 <form class="form-inline">
 <b>Display:  </b>
@@ -164,9 +169,12 @@
     days 
 </form>
 </div>
+
+
 <div id="div4">
 Topic usage by elites: 0.99% all, <font color="blue">0.29% Senate Democrats</font>, <font color="red">0.37% Senate Republicans</font>, <font color="blue">0.36% House Democrats</font>, <font color="red">2.95% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/TGowdySC">@TGowdySC (R-SC)</a>, <a href="http://www.twitter.com/RepWOLFPress">@RepWOLFPress (R-VA)</a>, <a href="http://www.twitter.com/RobWittman">@RobWittman (R-VA)</a>, <a href="http://www.twitter.com/RepRichardHanna">@RepRichardHanna (R-NY)</a>, <a href="http://www.twitter.com/RepHalRogers">@RepHalRogers (R-KY)</a></br>Topic usage by media and public: 0.13% Media, 0.00% informed public, 0.00% random users, <font color="blue">0.00% Democratic supporters</font>, <font color="red">0.00% Republican supporters</font>.</br>
 </div>
+
 <div id="header2"><h3>Sample of representative tweets by Members of Congress:</h3></div>
 <div id="div5" style="width:500px">
 <blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>House leadership press conference w/ @SpeakerBoehner @GOPLeader @GOPWhip @cathymcmorris @RepFredUpton at 9AM CST: http://t.co/sdNfxVwSqc</p> RepLynnJenkins (@RepLynnJenkins) <a href='https://twitter.com/RepLynnJenkins/status/383221823829069825'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>WATCH LIVE @ 10 AM ET: Press conference w/@GOPLeader, @GOPWhip, @CathyMcMorris, @RepLynnJenkins, &amp; @RepJohnKline http://t.co/2GQR5czxqX</p> SpeakerBoehner (@SpeakerBoehner) <a href='https://twitter.com/SpeakerBoehner/status/346984790098067458'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>RT @HouseHomeland: Watch LIVE @ 10am: Chairman McCaul Hearing Examining #DHS #Cybersecurity Roles &amp; Responsibilities - http://t.co/z ...</p> McCaulPressShop (@McCaulPressShop) <a href='https://twitter.com/McCaulPressShop/status/311845250962444288'></a></blockquote>
@@ -183,6 +191,7 @@ Topic usage by elites: 0.99% all, <font color="blue">0.29% Senate Democrats</fon
 </div>
 <br><br>
 </div>
+
 <script type="text/javascript">
   var g;
   g = new Dygraph(
@@ -201,6 +210,7 @@ Topic usage by elites: 0.99% all, <font color="blue">0.29% Senate Democrats</fon
       labelsKMB: true,
     }          // options
   );
+
   function change(el) {
      g.setVisibility(el.id, el.checked);
   }
@@ -208,6 +218,7 @@ Topic usage by elites: 0.99% all, <font color="blue">0.29% Senate Democrats</fon
     value = input.value;
     g.adjustRoll(value);
   }
+
 </script>
 </body>
 </html>

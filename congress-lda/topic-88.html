@@ -5,6 +5,7 @@
 <script type="text/javascript" src="js/dygraph-combined.js"></script>
 <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+
 <style>
 #sitemap { position: absolute; left: 50%; margin-left: -400px; top: 1%; margin-top: 50 px; }
 #header1 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 30px; }
@@ -23,7 +24,9 @@
   }
 </style>
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
 <body>
+
 <div id="sitemap">
 <b> &laquo; <a href="index.html">Back to Index</a>   &#8226;   Topic selection: </b>
 <select onchange="if (this.value) window.location.href=this.value" class="input-xxlarge">
@@ -132,9 +135,11 @@
 <div id="header1"><h3>Topic Usage Over Time:</h3></div>
 <div id="div1" style="width:600px">
 </div>
+
 <div id="div2" style="width:300px">
 <img src='img/words-plot-88.png'>
 </div>
+
 <div id="div3">
 <form class="form-inline">
 <b>Display:  </b>
@@ -164,9 +169,12 @@
     days 
 </form>
 </div>
+
+
 <div id="div4">
-Topic usage by elites: 0.66% all, <font color="blue">0.18% Senate Democrats</font>, <font color="red">1.01% Senate Republicans</font>, <font color="blue">0.13% House Democrats</font>, <font color="red">1.32% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/DesJarlaisTN04">@DesJarlaisTN04 (R-TN)</a>, <a href="http://www.twitter.com/treyradel">@treyradel (R-FL)</a>, <a href="http://www.twitter.com/DarrellIssa">@DarrellIssa (R-CA)</a>, <a href="http://www.twitter.com/RepKenMarchant">@RepKenMarchant (R-TX)</a>, <a href="http://www.twitter.com/RepAaronSchock">@RepAaronSchock (R-IL)</a></br>Topic usage by media and public: 1.21% Media, 0.09% informed public, 0.01% random users, <font color="blue">0.42% Democratic supporters</font>, <font color="red">2.11% Republican supporters</font>.</br>
+Topic usage by elites: 0.66% all, <font color="blue">0.18% Senate Democrats</font>, <font color="red">1.01% Senate Republicans</font>, <font color="blue">0.13% House Democrats</font>, <font color="red">1.32% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/DesJarlaisTN04">@DesJarlaisTN04 (R-TN)</a>, <a href="http://www.twitter.com/treyradel">@treyradel (R-FL)</a>, <a href="http://www.twitter.com/DarrellIssa">@DarrellIssa (R-CA)</a>, <a href="http://www.twitter.com/RepKenMarchant">@RepKenMarchant (R-TX)</a>, <a href="http://www.twitter.com/RepAaronSchock">@RepAaronSchock (R-IL)</a></br>Topic usage by media and public: 1.21% Media, 0.09% informed public, 0.03% random users, <font color="blue">0.42% Democratic supporters</font>, <font color="red">2.11% Republican supporters</font>.</br>
 </div>
+
 <div id="header2"><h3>Sample of representative tweets by Members of Congress:</h3></div>
 <div id="div5" style="width:500px">
 <blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>WATCH me question IRS's Daniel Werfel on the IRS targeting groups based on their personal beliefs http://t.co/XRpFawjvJk … #MN03</p> RepErikPaulsen (@RepErikPaulsen) <a href='https://twitter.com/RepErikPaulsen/status/350407001303552002'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>What questions do you want answered at Friday’s Ways &amp; Means hearing on the IRS targeting conservative groups? https://t.co/zNueDfCsp3</p> RepToddYoung (@RepToddYoung) <a href='https://twitter.com/RepToddYoung/status/334760405090066432'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>This week @GOPoversight will hold a hearing on #IRS targeting Americans based on political beliefs. What would you ask #IRS officials?</p> RepMeehan (@RepMeehan) <a href='https://twitter.com/RepMeehan/status/336523373268062208'></a></blockquote>
@@ -183,6 +191,7 @@ Topic usage by elites: 0.66% all, <font color="blue">0.18% Senate Democrats</fon
 </div>
 <br><br>
 </div>
+
 <script type="text/javascript">
   var g;
   g = new Dygraph(
@@ -201,6 +210,7 @@ Topic usage by elites: 0.66% all, <font color="blue">0.18% Senate Democrats</fon
       labelsKMB: true,
     }          // options
   );
+
   function change(el) {
      g.setVisibility(el.id, el.checked);
   }
@@ -208,6 +218,7 @@ Topic usage by elites: 0.66% all, <font color="blue">0.18% Senate Democrats</fon
     value = input.value;
     g.adjustRoll(value);
   }
+
 </script>
 </body>
 </html>

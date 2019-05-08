@@ -5,6 +5,7 @@
 <script type="text/javascript" src="js/dygraph-combined.js"></script>
 <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+
 <style>
 #sitemap { position: absolute; left: 50%; margin-left: -400px; top: 1%; margin-top: 50 px; }
 #header1 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 30px; }
@@ -23,7 +24,9 @@
   }
 </style>
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
 <body>
+
 <div id="sitemap">
 <b> &laquo; <a href="index.html">Back to Index</a>   &#8226;   Topic selection: </b>
 <select onchange="if (this.value) window.location.href=this.value" class="input-xxlarge">
@@ -132,9 +135,11 @@
 <div id="header1"><h3>Topic Usage Over Time:</h3></div>
 <div id="div1" style="width:600px">
 </div>
+
 <div id="div2" style="width:300px">
 <img src='img/words-plot-49.png'>
 </div>
+
 <div id="div3">
 <form class="form-inline">
 <b>Display:  </b>
@@ -164,9 +169,12 @@
     days 
 </form>
 </div>
+
+
 <div id="div4">
-Topic usage by elites: 0.38% all, <font color="blue">0.35% Senate Democrats</font>, <font color="red">0.44% Senate Republicans</font>, <font color="blue">0.26% House Democrats</font>, <font color="red">0.48% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/RepLouBarletta">@RepLouBarletta (R-PA)</a>, <a href="http://www.twitter.com/TomCoburn">@TomCoburn (R-OK)</a>, <a href="http://www.twitter.com/RepHalRogers">@RepHalRogers (R-KY)</a>, <a href="http://www.twitter.com/RepJohnCampbell">@RepJohnCampbell (R-CA)</a>, <a href="http://www.twitter.com/GreggHarper">@GreggHarper (R-MS)</a></br>Topic usage by media and public: 0.33% Media, 0.10% informed public, 0.03% random users, <font color="blue">0.09% Democratic supporters</font>, <font color="red">0.12% Republican supporters</font>.</br>
+Topic usage by elites: 0.38% all, <font color="blue">0.35% Senate Democrats</font>, <font color="red">0.44% Senate Republicans</font>, <font color="blue">0.26% House Democrats</font>, <font color="red">0.48% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/RepLouBarletta">@RepLouBarletta (R-PA)</a>, <a href="http://www.twitter.com/TomCoburn">@TomCoburn (R-OK)</a>, <a href="http://www.twitter.com/RepHalRogers">@RepHalRogers (R-KY)</a>, <a href="http://www.twitter.com/RepJohnCampbell">@RepJohnCampbell (R-CA)</a>, <a href="http://www.twitter.com/GreggHarper">@GreggHarper (R-MS)</a></br>Topic usage by media and public: 0.33% Media, 0.10% informed public, 0.05% random users, <font color="blue">0.09% Democratic supporters</font>, <font color="red">0.12% Republican supporters</font>.</br>
 </div>
+
 <div id="header2"><h3>Sample of representative tweets by Members of Congress:</h3></div>
 <div id="div5" style="width:500px">
 <blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>RT @gopconference: Watch @GreggHarper discuss the bipartisan Gabriella Miller #KidsFirst Research Act in this week's #GOP address http://t.…</p> SpeakerBoehner (@SpeakerBoehner) <a href='https://twitter.com/SpeakerBoehner/status/419497716742623232'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>#KidsFirst Research Act puts children’s medical research funding ahead of political campaigns and conventions: http://t.co/1EiUxn5LYq</p> RepTomReed (@RepTomReed) <a href='https://twitter.com/RepTomReed/status/354271371632705536'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>American Pastor Saeed Abedini is wrongly imprisoned in Iran for his faith. Join me in praying for Saeed and his family #FreeSaeed #SaveSaeed</p> RepStevePearce (@RepStevePearce) <a href='https://twitter.com/RepStevePearce/status/408288028415639552'></a></blockquote>
@@ -183,6 +191,7 @@ Topic usage by elites: 0.38% all, <font color="blue">0.35% Senate Democrats</fon
 </div>
 <br><br>
 </div>
+
 <script type="text/javascript">
   var g;
   g = new Dygraph(
@@ -201,6 +210,7 @@ Topic usage by elites: 0.38% all, <font color="blue">0.35% Senate Democrats</fon
       labelsKMB: true,
     }          // options
   );
+
   function change(el) {
      g.setVisibility(el.id, el.checked);
   }
@@ -208,6 +218,7 @@ Topic usage by elites: 0.38% all, <font color="blue">0.35% Senate Democrats</fon
     value = input.value;
     g.adjustRoll(value);
   }
+
 </script>
 </body>
 </html>

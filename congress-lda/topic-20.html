@@ -5,6 +5,7 @@
 <script type="text/javascript" src="js/dygraph-combined.js"></script>
 <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet">
+
 <style>
 #sitemap { position: absolute; left: 50%; margin-left: -400px; top: 1%; margin-top: 50 px; }
 #header1 { position: absolute; left: 50%; margin-left: -500px; top: 0%; margin-top: 30px; }
@@ -23,7 +24,9 @@
   }
 </style>
 <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+
 <body>
+
 <div id="sitemap">
 <b> &laquo; <a href="index.html">Back to Index</a>   &#8226;   Topic selection: </b>
 <select onchange="if (this.value) window.location.href=this.value" class="input-xxlarge">
@@ -132,9 +135,11 @@
 <div id="header1"><h3>Topic Usage Over Time:</h3></div>
 <div id="div1" style="width:600px">
 </div>
+
 <div id="div2" style="width:300px">
 <img src='img/words-plot-20.png'>
 </div>
+
 <div id="div3">
 <form class="form-inline">
 <b>Display:  </b>
@@ -164,9 +169,12 @@
     days 
 </form>
 </div>
+
+
 <div id="div4">
 Topic usage by elites: 0.43% all, <font color="blue">0.22% Senate Democrats</font>, <font color="red">0.38% Senate Republicans</font>, <font color="blue">0.22% House Democrats</font>, <font color="red">0.90% House Republicans</font>.</br>Top Members of Congress: <a href="http://www.twitter.com/repjohnconyers">@repjohnconyers (D-MI)</a>, <a href="http://www.twitter.com/RonWyden">@RonWyden (D-OR)</a>, <a href="http://www.twitter.com/RepThomasMassie">@RepThomasMassie (R-KY)</a>, <a href="http://www.twitter.com/RepMikeRogers">@RepMikeRogers (R-MI)</a>, <a href="http://www.twitter.com/repjustinamash">@repjustinamash (R-MI)</a></br>Topic usage by media and public: 0.90% Media, 0.26% informed public, 0.11% random users, <font color="blue">0.28% Democratic supporters</font>, <font color="red">0.52% Republican supporters</font>.</br>
 </div>
+
 <div id="header2"><h3>Sample of representative tweets by Members of Congress:</h3></div>
 <div id="div5" style="width:500px">
 <blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>Thanks to @RepJustinAmash @RepJohnConyers Rep. @JaredPolis for your leadership defending privacy rights of Americans #p2</p> RepGaramendi (@RepGaramendi) <a href='https://twitter.com/RepGaramendi/status/360218678932930561'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>RT @drshow: On now: @repjustinamash on his proposed Amash Amendment, which would cut NSA funding for data gathering programs: http://t.co/d…</p> repjustinamash (@repjustinamash) <a href='https://twitter.com/repjustinamash/status/362215009331331073'></a></blockquote><blockquote class="twitter-tweet" data-cards="hidden" data-conversation="none" width="450"><p>RT @RepZoeLofgren: I'm urging support for #AmashConyers amendment to stop #NSA surveillance of Americans @repjustinamash @repjohnconyers ht…</p> repjustinamash (@repjustinamash) <a href='https://twitter.com/repjustinamash/status/360121363463282688'></a></blockquote>
@@ -183,6 +191,7 @@ Topic usage by elites: 0.43% all, <font color="blue">0.22% Senate Democrats</fon
 </div>
 <br><br>
 </div>
+
 <script type="text/javascript">
   var g;
   g = new Dygraph(
@@ -201,6 +210,7 @@ Topic usage by elites: 0.43% all, <font color="blue">0.22% Senate Democrats</fon
       labelsKMB: true,
     }          // options
   );
+
   function change(el) {
      g.setVisibility(el.id, el.checked);
   }
@@ -208,6 +218,7 @@ Topic usage by elites: 0.43% all, <font color="blue">0.22% Senate Democrats</fon
     value = input.value;
     g.adjustRoll(value);
   }
+
 </script>
 </body>
 </html>
